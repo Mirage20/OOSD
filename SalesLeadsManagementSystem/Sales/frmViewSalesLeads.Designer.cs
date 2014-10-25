@@ -35,6 +35,7 @@
             this.chkShowUnclosed = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelSelectColumns = new System.Windows.Forms.Panel();
+            this.chkCustomerShortName = new System.Windows.Forms.CheckBox();
             this.chkAccManager = new System.Windows.Forms.CheckBox();
             this.chkNotes = new System.Windows.Forms.CheckBox();
             this.chkDiscount = new System.Windows.Forms.CheckBox();
@@ -60,7 +61,6 @@
             this.chkCustomerName = new System.Windows.Forms.CheckBox();
             this.chkSalesID = new System.Windows.Forms.CheckBox();
             this.groupBoxColumnSelect = new System.Windows.Forms.GroupBox();
-            this.chkCustomerShortName = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalesLeads)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panelSelectColumns.SuspendLayout();
@@ -81,6 +81,7 @@
             this.dataGridViewSalesLeads.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSalesLeads.Size = new System.Drawing.Size(645, 246);
             this.dataGridViewSalesLeads.TabIndex = 0;
+            this.dataGridViewSalesLeads.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSalesLeads_CellDoubleClick);
             // 
             // btnUpdate
             // 
@@ -170,6 +171,19 @@
             this.panelSelectColumns.Name = "panelSelectColumns";
             this.panelSelectColumns.Size = new System.Drawing.Size(288, 93);
             this.panelSelectColumns.TabIndex = 5;
+            // 
+            // chkCustomerShortName
+            // 
+            this.chkCustomerShortName.AutoSize = true;
+            this.chkCustomerShortName.Checked = true;
+            this.chkCustomerShortName.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCustomerShortName.Location = new System.Drawing.Point(13, 58);
+            this.chkCustomerShortName.Name = "chkCustomerShortName";
+            this.chkCustomerShortName.Size = new System.Drawing.Size(123, 17);
+            this.chkCustomerShortName.TabIndex = 24;
+            this.chkCustomerShortName.Text = "CustomerShortName";
+            this.chkCustomerShortName.UseVisualStyleBackColor = true;
+            this.chkCustomerShortName.CheckedChanged += new System.EventHandler(this.chkCustomerShortName_CheckedChanged);
             // 
             // chkAccManager
             // 
@@ -492,19 +506,6 @@
             this.groupBoxColumnSelect.TabIndex = 6;
             this.groupBoxColumnSelect.TabStop = false;
             this.groupBoxColumnSelect.Text = "Select Columns";
-            // 
-            // chkCustomerShortName
-            // 
-            this.chkCustomerShortName.AutoSize = true;
-            this.chkCustomerShortName.Checked = true;
-            this.chkCustomerShortName.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCustomerShortName.Location = new System.Drawing.Point(13, 58);
-            this.chkCustomerShortName.Name = "chkCustomerShortName";
-            this.chkCustomerShortName.Size = new System.Drawing.Size(123, 17);
-            this.chkCustomerShortName.TabIndex = 24;
-            this.chkCustomerShortName.Text = "CustomerShortName";
-            this.chkCustomerShortName.UseVisualStyleBackColor = true;
-            this.chkCustomerShortName.CheckedChanged += new System.EventHandler(this.chkCustomerShortName_CheckedChanged);
             // 
             // frmViewSalesLeads
             // 

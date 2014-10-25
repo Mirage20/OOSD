@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SalesLeadsManagementSystem.Sales.Comment;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -252,5 +253,13 @@ namespace SalesLeadsManagementSystem.Sales
             this.selectVisibleColumns();
         }
         #endregion
+
+        private void dataGridViewSalesLeads_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmComment newCommnt = new frmComment();
+            CommentHandler newhandler = new CommentHandler(newCommnt, new Comment.Comment());
+            newCommnt.SelectedSalesLeadsID = (int)dataGridViewSalesLeads.SelectedRows[0].Cells[0].Value;
+            newCommnt.Show();
+        }
     }
 }
