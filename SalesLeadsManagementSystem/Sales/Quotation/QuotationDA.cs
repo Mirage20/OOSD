@@ -24,12 +24,29 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
 
         public bool addToDatabase(Quotation newQuotation)
         {
-            throw new NotImplementedException();
+            string sqlAddQuotation = "INSERT INTO `salesleads`.`quatation` (`SalesLeadsID`, `QuatationDate`, `QuotationStatus`, `QuotationLocation`) VALUES ('" + newQuotation.SalesleadID + "', " + Rules.toSQLDate(newQuotation.QuotationDate) + ", '" + newQuotation.QuotationStatus + "', ?FileData);";
+            DBLink.openConnection();
+            bool result = DBLink.executeWriteQuarry(sqlAddQuotation, "?FileData", newQuotation.QuotationData);           
+            DBLink.closeConnection();
+            return result;
         }
 
         public bool updateToDatabase(Quotation existingQuotation)
         {
-            throw new NotImplementedException();
+            string sqlUpdateQuotation = "UPDATE `salesleads`.`quatation` SET `SalesLeadsID` = '" + existingQuotation.SalesleadID + "', `QuatationDate` = '" + existingQuotation.QuotationDate + "', `QuotationStatus` = '" + existingQuotation.QuotationStatus + "' WHERE `quatation`.`QuatationID` = " + existingQuotation.QuotationID + ";";
+            DBLink.openConnection();
+            bool result = DBLink.executeWriteQuarry(sqlUpdateQuotation);
+            DBLink.closeConnection();
+            return result;
+        }
+
+        public bool updateToDatabaseQuotationData(Quotation existingQuotation)
+        {
+            string sqlUpdateQuotation = "UPDATE `salesleads`.`quatation` SET `QuotationLocation` = ?FileData  WHERE `quatation`.`QuatationID` = " + existingQuotation.QuotationID + ";";
+            DBLink.openConnection();
+            bool result = DBLink.executeWriteQuarry(sqlUpdateQuotation, "?FileData", existingQuotation.QuotationData);
+            DBLink.closeConnection();
+            return result;
         }
 
 
@@ -66,5 +83,31 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
         {
             return General.DBLink.executeTableQuarry("SELECT `QuatationID`,`SalesLeadsID`,`QuatationDate`,`QuotationStatus` FROM `quatation` WHERE `SalesLeadsID`=" + salesID.ToString());
         }
+
+        public byte[] getQuotationData(int qID)
+        {
+            DBLink.openConnection();
+
+            string sqlUser = "SELECT `QuotationLocation`,LENGTH(`QuotationLocation`) FROM `salesleads`.`quatation` WHERE `QuatationID`='" + qID + "';";
+
+            MySqlDataReader quotationData = DBLink.executeReadQuarry(sqlUser);
+
+
+            if (quotationData.Read() && !quotationData.IsDBNull(1))
+            {
+
+                int quotationFileSize = quotationData.GetInt32(1);
+                byte[] binaryData = new byte[quotationFileSize];
+                if (quotationFileSize > 0)
+                    quotationData.GetBytes(0, 0, binaryData, 0, quotationFileSize);
+               return binaryData;
+                
+            }
+
+            return null;
+            
+
+        }
+
     }
 }
