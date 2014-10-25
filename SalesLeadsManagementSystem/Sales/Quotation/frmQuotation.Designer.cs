@@ -37,6 +37,7 @@
             this.btnView = new System.Windows.Forms.Button();
             this.openFileDialogQuotation = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
+            this.chkAddMode = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuotations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +72,7 @@
             this.dataGridViewQuotations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuotations.Size = new System.Drawing.Size(646, 167);
             this.dataGridViewQuotations.TabIndex = 2;
+            this.dataGridViewQuotations.SelectionChanged += new System.EventHandler(this.dataGridViewQuotations_SelectionChanged);
             // 
             // label1
             // 
@@ -107,6 +109,7 @@
             this.btnView.TabIndex = 6;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // label3
             // 
@@ -117,11 +120,22 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Quotation Data ??";
             // 
+            // chkAddMode
+            // 
+            this.chkAddMode.AutoSize = true;
+            this.chkAddMode.Location = new System.Drawing.Point(505, 32);
+            this.chkAddMode.Name = "chkAddMode";
+            this.chkAddMode.Size = new System.Drawing.Size(80, 17);
+            this.chkAddMode.TabIndex = 8;
+            this.chkAddMode.Text = "checkBox1";
+            this.chkAddMode.UseVisualStyleBackColor = true;
+            // 
             // frmQuotation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 362);
+            this.Controls.Add(this.chkAddMode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnAdd);
@@ -132,6 +146,7 @@
             this.Controls.Add(this.dateTimePickerQuotationDate);
             this.Name = "frmQuotation";
             this.Text = "frmQuotation";
+            this.Load += new System.EventHandler(this.frmQuotation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuotations)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,5 +164,6 @@
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.OpenFileDialog openFileDialogQuotation;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chkAddMode;
     }
 }
