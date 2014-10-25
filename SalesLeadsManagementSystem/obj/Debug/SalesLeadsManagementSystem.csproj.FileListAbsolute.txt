@@ -27,3 +27,6 @@ E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagem
 D:\OOSD Project\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
 D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
 D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
+D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
+D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
+D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
