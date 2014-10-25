@@ -38,15 +38,20 @@
             this.openFileDialogQuotation = new System.Windows.Forms.OpenFileDialog();
             this.label3 = new System.Windows.Forms.Label();
             this.chkAddMode = new System.Windows.Forms.CheckBox();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.lblQPath = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuotations)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePickerQuotationDate
             // 
+            this.dateTimePickerQuotationDate.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePickerQuotationDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerQuotationDate.Location = new System.Drawing.Point(100, 48);
             this.dateTimePickerQuotationDate.Name = "dateTimePickerQuotationDate";
-            this.dateTimePickerQuotationDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerQuotationDate.Size = new System.Drawing.Size(116, 20);
             this.dateTimePickerQuotationDate.TabIndex = 0;
+            this.dateTimePickerQuotationDate.Value = new System.DateTime(2014, 10, 25, 20, 16, 26, 0);
             // 
             // txtQuotationStatus
             // 
@@ -69,6 +74,7 @@
             this.dataGridViewQuotations.Location = new System.Drawing.Point(12, 183);
             this.dataGridViewQuotations.MultiSelect = false;
             this.dataGridViewQuotations.Name = "dataGridViewQuotations";
+            this.dataGridViewQuotations.ReadOnly = true;
             this.dataGridViewQuotations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuotations.Size = new System.Drawing.Size(646, 167);
             this.dataGridViewQuotations.TabIndex = 2;
@@ -94,47 +100,73 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(511, 79);
+            this.btnAdd.Location = new System.Drawing.Point(583, 79);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 5;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "&Update";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(430, 79);
+            this.btnView.Location = new System.Drawing.Point(502, 79);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(75, 23);
             this.btnView.TabIndex = 6;
-            this.btnView.Text = "View";
+            this.btnView.Text = "&View";
             this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // openFileDialogQuotation
+            // 
+            this.openFileDialogQuotation.Filter = "PDF Files|*.pdf";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Quotation Data ??";
+            this.label3.Text = "Quotation Path";
             // 
             // chkAddMode
             // 
             this.chkAddMode.AutoSize = true;
-            this.chkAddMode.Location = new System.Drawing.Point(505, 32);
+            this.chkAddMode.Location = new System.Drawing.Point(412, 83);
             this.chkAddMode.Name = "chkAddMode";
-            this.chkAddMode.Size = new System.Drawing.Size(80, 17);
+            this.chkAddMode.Size = new System.Drawing.Size(75, 17);
             this.chkAddMode.TabIndex = 8;
-            this.chkAddMode.Text = "checkBox1";
+            this.chkAddMode.Text = "&Add Mode";
             this.chkAddMode.UseVisualStyleBackColor = true;
+            this.chkAddMode.CheckedChanged += new System.EventHandler(this.chkAddMode_CheckedChanged);
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Location = new System.Drawing.Point(583, 8);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.TabIndex = 9;
+            this.btnBrowse.Text = "&Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // lblQPath
+            // 
+            this.lblQPath.AutoSize = true;
+            this.lblQPath.Location = new System.Drawing.Point(17, 33);
+            this.lblQPath.Name = "lblQPath";
+            this.lblQPath.Size = new System.Drawing.Size(0, 13);
+            this.lblQPath.TabIndex = 10;
             // 
             // frmQuotation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 362);
+            this.Controls.Add(this.lblQPath);
+            this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.chkAddMode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnView);
@@ -165,5 +197,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogQuotation;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox chkAddMode;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Label lblQPath;
     }
 }
