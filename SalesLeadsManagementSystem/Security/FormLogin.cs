@@ -47,7 +47,7 @@ namespace SalesLeadsManagementSystem.Security
             Administration.User.User devUser= new Administration.User.User();
             devUser.Permissions = 5;
             devUser.Name = "Developer";
-            devUser.UserName = "120010B";
+            devUser.UserName = "120006T";
             
             General.frmMain.AppUser = devUser;
 

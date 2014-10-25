@@ -61,6 +61,25 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
         private void frmQuotation_Load(object sender, EventArgs e)
         {
             refresh();
+
+            if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.AccountManager)
+            {
+                
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Manager)
+            {
+                
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Engineer)
+            {
+                btnAdd.Enabled = false;
+                btnBrowse.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.DeputyGeneralManager)
+            {
+                
+            }
         }
 
         private void refresh()

@@ -136,6 +136,26 @@ namespace SalesLeadsManagementSystem.Administration.User
         {
             isAddMode = chkAddMode.Checked;
             this.UpdateControls();
+
+            if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.AccountManager)
+            {
+                btnAddUpdate.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Manager)
+            {
+                chkAddMode.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Engineer)
+            {
+                btnAddUpdate.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.DeputyGeneralManager)
+            {
+                chkAddMode.Enabled = false;
+            }
         }
 
         //chamil

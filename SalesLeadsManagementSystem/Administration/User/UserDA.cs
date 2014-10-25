@@ -88,5 +88,10 @@ namespace SalesLeadsManagementSystem.Administration.User
             return predecessorList;
         }
         //Chamil
+
+        public string[] getSuccesors(int permissionLevel,string username)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
