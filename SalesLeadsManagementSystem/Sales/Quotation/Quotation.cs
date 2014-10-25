@@ -55,11 +55,17 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
             return QuotationDA.getInstance().updateToDatabase(this);
         }
 
+        public bool updateQuotationData()
+        {
+            return QuotationDA.getInstance().updateToDatabaseQuotationData(this);
+        }
+
 
 
         public byte[] getQuotationData()
         {
-            throw new NotImplementedException();
+            return QuotationDA.getInstance().getQuotationData(this.quotationID);
         }
+
     }
 }
