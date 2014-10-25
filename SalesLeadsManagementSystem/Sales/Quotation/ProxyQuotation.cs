@@ -9,10 +9,23 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
     class ProxyQuotation:IQuotation
     {
         private Quotation quotation;
+        private int quotationID;
 
-        public ProxyQuotation()
+        public DateTime getQuotationDate()
         {
-                
+            return quotation == null ? DateTime.Today : quotation.QuotationDate;
+        }
+
+        public string getQstatus()
+        {
+            return quotation == null ? "" : quotation.QuotationStatus;
+        }
+
+        public ProxyQuotation(int quotationID)
+        {
+            // TODO: Complete member initialization
+            this.quotationID = quotationID;
+            quotation = QuotationDA.getInstance().readFromDatabase(quotationID);
         }
 
         //get quotation byte array (if exist just return other wise call qutation original methord getQutationData )
