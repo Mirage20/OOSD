@@ -388,6 +388,7 @@
             this.btnQutationFilesView.TabIndex = 23;
             this.btnQutationFilesView.Text = "View";
             this.btnQutationFilesView.UseVisualStyleBackColor = true;
+            this.btnQutationFilesView.Click += new System.EventHandler(this.btnQutationFilesView_Click);
             // 
             // btnPurchaseFileView
             // 
