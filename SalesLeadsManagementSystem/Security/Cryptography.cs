@@ -10,10 +10,6 @@ namespace SalesLeadsManagementSystem.Security
 
     /// <summary>
     /// Class for securing sensitive data.
-<<<<<<< HEAD
-    /// Mirage
-=======
->>>>>>> 450f9b4a2c52cd6638b7900f386cd35caf09607e
     /// </summary>
     class Cryptography
     {
