@@ -27,6 +27,7 @@ E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagem
 D:\OOSD Project\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
 D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
 D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
+<<<<<<< HEAD
 D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
 D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
 D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
@@ -47,3 +48,22 @@ D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Secu
 D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
 D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
 D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
+=======
+D:\OOSD Project\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
+D:\OOSD Project\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csprojResolveAssemblyReference.cache
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.Customer.frmCustomer.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.Product.frmProduct.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.User.frmUser.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.General.frmMain.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.Comment.frmComment.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmAddUpdateSalesLead.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmSelectCustomer.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmSelectProduct.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmViewSalesLeads.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.Quotation.frmQuotation.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmLogin.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Properties.Resources.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmResetPassword.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
+>>>>>>> 450f9b4a2c52cd6638b7900f386cd35caf09607e
