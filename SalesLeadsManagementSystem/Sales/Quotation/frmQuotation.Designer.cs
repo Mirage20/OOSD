@@ -51,6 +51,7 @@
             this.dateTimePickerQuotationDate.Name = "dateTimePickerQuotationDate";
             this.dateTimePickerQuotationDate.Size = new System.Drawing.Size(137, 20);
             this.dateTimePickerQuotationDate.TabIndex = 0;
+            this.dateTimePickerQuotationDate.Value = new System.DateTime(2014, 10, 25, 20, 16, 26, 0);
             // 
             // txtQuotationStatus
             // 

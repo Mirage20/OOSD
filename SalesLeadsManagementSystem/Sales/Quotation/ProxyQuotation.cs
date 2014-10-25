@@ -10,7 +10,7 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
     {
         private Quotation quotation;
         private int quotationID;
-
+        private int salesID;
         public DateTime getQuotationDate()
         {
             return quotation == null ? DateTime.Today : quotation.QuotationDate;
@@ -21,11 +21,19 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
             return quotation == null ? "" : quotation.QuotationStatus;
         }
 
-        public ProxyQuotation(int quotationID)
+        public ProxyQuotation(int quotationID,int salesID)
         {
             // TODO: Complete member initialization
             this.quotationID = quotationID;
             quotation = QuotationDA.getInstance().readFromDatabase(quotationID);
+            this.salesID = salesID;
+        }
+
+        public ProxyQuotation(int salesID)
+        {
+            quotation = new Quotation();
+            this.salesID = salesID;
+            quotation.SalesleadID = this.salesID;
         }
 
         //get quotation byte array (if exist just return other wise call qutation original methord getQutationData )

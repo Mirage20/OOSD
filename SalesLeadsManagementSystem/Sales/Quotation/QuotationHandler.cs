@@ -40,7 +40,7 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
 
         public void viewQuotation(int quotationID)
         {
-            proxyQuotation = new ProxyQuotation(quotationID);
+            proxyQuotation = new ProxyQuotation(quotationID,frmQuotation.SalesID);
 
             if (proxyQuotation != null)
             {
@@ -58,6 +58,7 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
 
         public void newQuotation()
         {
+            proxyQuotation = new ProxyQuotation(frmQuotation.SalesID);
             proxyQuotation.setQDate(frmQuotation.PickerQuoatationDate.Value);
             proxyQuotation.setQstatus(frmQuotation.QuoatationStatus.Text);
             proxyQuotation.setSalesID(frmQuotation.SalesID);
