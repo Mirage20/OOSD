@@ -104,7 +104,7 @@ namespace SalesLeadsManagementSystem.Sales.Quotation
             {
                 System.Windows.Forms.MessageBox.Show("Please select a Quotation","Error",System.Windows.Forms.MessageBoxButtons.OK,System.Windows.Forms.MessageBoxIcon.Exclamation);
             }
-            //System.Windows.Forms.MessageBox.Show("hsgdfhshjfhjsdf");
+            
         }
     }
 }

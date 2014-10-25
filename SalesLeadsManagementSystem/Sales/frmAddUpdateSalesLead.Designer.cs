@@ -52,7 +52,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.cmbFirstBill = new System.Windows.Forms.ComboBox();
             this.groupBoxFiles = new System.Windows.Forms.GroupBox();
-            this.btnQutationFilesAdd = new System.Windows.Forms.Button();
             this.btnPurchaseFileAdd = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -330,7 +329,6 @@
             // 
             // groupBoxFiles
             // 
-            this.groupBoxFiles.Controls.Add(this.btnQutationFilesAdd);
             this.groupBoxFiles.Controls.Add(this.btnPurchaseFileAdd);
             this.groupBoxFiles.Controls.Add(this.label19);
             this.groupBoxFiles.Controls.Add(this.label18);
@@ -343,15 +341,6 @@
             this.groupBoxFiles.TabStop = false;
             this.groupBoxFiles.Text = "Files";
             // 
-            // btnQutationFilesAdd
-            // 
-            this.btnQutationFilesAdd.Location = new System.Drawing.Point(148, 52);
-            this.btnQutationFilesAdd.Name = "btnQutationFilesAdd";
-            this.btnQutationFilesAdd.Size = new System.Drawing.Size(54, 23);
-            this.btnQutationFilesAdd.TabIndex = 25;
-            this.btnQutationFilesAdd.Text = "Add";
-            this.btnQutationFilesAdd.UseVisualStyleBackColor = true;
-            // 
             // btnPurchaseFileAdd
             // 
             this.btnPurchaseFileAdd.Location = new System.Drawing.Point(148, 23);
@@ -361,6 +350,7 @@
             this.btnPurchaseFileAdd.Text = "Change";
             this.btnPurchaseFileAdd.UseVisualStyleBackColor = true;
             this.btnPurchaseFileAdd.Click += new System.EventHandler(this.btnPurchaseFileAdd_Click);
+            this.btnPurchaseFileAdd.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnPurchaseFileAdd_MouseDown);
             // 
             // label19
             // 
@@ -384,7 +374,7 @@
             // 
             this.btnQutationFilesView.Location = new System.Drawing.Point(93, 52);
             this.btnQutationFilesView.Name = "btnQutationFilesView";
-            this.btnQutationFilesView.Size = new System.Drawing.Size(54, 23);
+            this.btnQutationFilesView.Size = new System.Drawing.Size(109, 23);
             this.btnQutationFilesView.TabIndex = 23;
             this.btnQutationFilesView.Text = "View";
             this.btnQutationFilesView.UseVisualStyleBackColor = true;
@@ -720,7 +710,6 @@
         private System.Windows.Forms.Button btnAddUpdate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button btnQutationFilesAdd;
         private System.Windows.Forms.Button btnPurchaseFileAdd;
     }
 }

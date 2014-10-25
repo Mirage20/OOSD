@@ -49,7 +49,7 @@
             this.dateTimePickerQuotationDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerQuotationDate.Location = new System.Drawing.Point(100, 48);
             this.dateTimePickerQuotationDate.Name = "dateTimePickerQuotationDate";
-            this.dateTimePickerQuotationDate.Size = new System.Drawing.Size(137, 20);
+            this.dateTimePickerQuotationDate.Size = new System.Drawing.Size(116, 20);
             this.dateTimePickerQuotationDate.TabIndex = 0;
             this.dateTimePickerQuotationDate.Value = new System.DateTime(2014, 10, 25, 20, 16, 26, 0);
             // 
@@ -100,7 +100,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(511, 79);
+            this.btnAdd.Location = new System.Drawing.Point(583, 79);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(430, 79);
+            this.btnView.Location = new System.Drawing.Point(502, 79);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(75, 23);
             this.btnView.TabIndex = 6;
@@ -127,14 +127,14 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Quotation Data ??";
+            this.label3.Text = "Quotation Path";
             // 
             // chkAddMode
             // 
             this.chkAddMode.AutoSize = true;
-            this.chkAddMode.Location = new System.Drawing.Point(505, 32);
+            this.chkAddMode.Location = new System.Drawing.Point(412, 83);
             this.chkAddMode.Name = "chkAddMode";
             this.chkAddMode.Size = new System.Drawing.Size(75, 17);
             this.chkAddMode.TabIndex = 8;
@@ -144,7 +144,7 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(409, 8);
+            this.btnBrowse.Location = new System.Drawing.Point(583, 8);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 9;

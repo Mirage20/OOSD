@@ -53,6 +53,7 @@ namespace SalesLeadsManagementSystem.Sales
                 updateSalesleadForm.BaseSalesLeadForm = this;
                 updateSalesleadForm.SelectedSalesLeadID=(int) dataGridViewSalesLeads.SelectedRows[0].Cells[0].Value;
                 SalesleadsHandler updateSalesleadHandler = new SalesleadsHandler(updateSalesleadForm);
+                
                 updateSalesleadForm.Show();
             }
         }
