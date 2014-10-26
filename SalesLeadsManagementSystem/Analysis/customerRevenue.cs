@@ -14,7 +14,8 @@ namespace SalesLeadsManagementSystem.Analysis
         private string revenueType = "";
         private DateTime Date;
         private List<float> totalRevenue = new List<float>();
-
+        
+        //Customer revenue constructor
         public customerRevenue()
         {
             Date = new DateTime();
