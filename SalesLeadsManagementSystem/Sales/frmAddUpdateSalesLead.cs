@@ -359,6 +359,30 @@ namespace SalesLeadsManagementSystem.Sales
             pickProduct.Show();
         }
 
+        private void btnQutationFilesView_Click(object sender, EventArgs e)
+        {
+            Quotation.QuotationHandler thisQuotationHandler = new Quotation.QuotationHandler();
+            Quotation.frmQuotation frmaddViewQuotationData = new Quotation.frmQuotation();
+
+            thisQuotationHandler.FrmQuotation = frmaddViewQuotationData;
+            frmaddViewQuotationData.QuotationHandler = thisQuotationHandler;
+            frmaddViewQuotationData.SalesID = this.selectedSalesLeadID;
+            frmaddViewQuotationData.Show();
+        }
+
+        
+
+        private void btnPurchaseFileAdd_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(e.Button==System.Windows.Forms.MouseButtons.Right)
+            {
+                btnPurchaseFileAdd.BackColor = SystemColors.Control;
+                addUpdateSalesleadsHandler.PurchaseOrderFilePath = "";
+            }
+        }
+
+        
+
       
 
         

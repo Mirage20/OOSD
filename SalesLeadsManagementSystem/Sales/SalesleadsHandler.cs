@@ -113,9 +113,15 @@ namespace SalesLeadsManagementSystem.Sales
 
         public void showPurchaseOrderFile()
         {
-            string tmpFilePath = System.Windows.Forms.Application.StartupPath + @"\temp.pdf";
-            Rules.bytesToFile(tmpFilePath, modelSaleslead.PurchaseOrderData);
-            System.Diagnostics.Process.Start(tmpFilePath);
+            if (modelSaleslead.PurchaseOrderData.Length > 1)
+            {
+                string tmpFilePath = System.Windows.Forms.Application.StartupPath + @"\temp.pdf";
+                Rules.bytesToFile(tmpFilePath, modelSaleslead.PurchaseOrderData);
+                System.Diagnostics.Process.Start(tmpFilePath);
+            }
+            else
+                System.Windows.Forms.MessageBox.Show("No files attached.", "WARNING", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+            
         }
 
         public static System.Data.DataView getAllSales()

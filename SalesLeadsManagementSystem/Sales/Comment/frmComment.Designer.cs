@@ -72,7 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 32);
+            this.label1.Location = new System.Drawing.Point(12, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 3;
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 56);
+            this.label3.Location = new System.Drawing.Point(12, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 5;
@@ -99,7 +99,7 @@
             // chkAddMode
             // 
             this.chkAddMode.AutoSize = true;
-            this.chkAddMode.Location = new System.Drawing.Point(385, 28);
+            this.chkAddMode.Location = new System.Drawing.Point(477, 97);
             this.chkAddMode.Name = "chkAddMode";
             this.chkAddMode.Size = new System.Drawing.Size(75, 17);
             this.chkAddMode.TabIndex = 6;
@@ -109,7 +109,7 @@
             // 
             // btnPost
             // 
-            this.btnPost.Location = new System.Drawing.Point(574, 88);
+            this.btnPost.Location = new System.Drawing.Point(574, 93);
             this.btnPost.Name = "btnPost";
             this.btnPost.Size = new System.Drawing.Size(75, 23);
             this.btnPost.TabIndex = 7;
@@ -120,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 15);
+            this.label4.Location = new System.Drawing.Point(15, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 8;
