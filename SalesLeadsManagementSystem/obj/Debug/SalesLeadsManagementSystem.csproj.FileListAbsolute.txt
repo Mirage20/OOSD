@@ -47,3 +47,4 @@ D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Secu
 D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
 D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
 D:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
+D:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.General.frmSettings.resources

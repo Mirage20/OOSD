@@ -35,12 +35,12 @@ namespace SalesLeadsManagementSystem.Security
         }
 
 
-        public bool create()
+        public bool create()  // add to database using secure Data Acess
         {
             return SecureDA.getInstance().addToDatabase(this);
         }
 
-        public bool update()
+        public bool update()  //update to database using secure Data Acess
         {
             return SecureDA.getInstance().updateToDatabase(this);
         }
