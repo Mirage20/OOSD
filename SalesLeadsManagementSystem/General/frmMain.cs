@@ -121,6 +121,13 @@ namespace SalesLeadsManagementSystem.General
             newSettings.ShowDialog();
         }
 
+        private void viewReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Analysis.frmCustomerReport viewReport = new Analysis.frmCustomerReport();
+            viewReport.MdiParent = this;
+            viewReport.Show();
+        }
+
        
     }
 }

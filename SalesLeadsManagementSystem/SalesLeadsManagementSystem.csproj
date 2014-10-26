@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +84,21 @@
     <Compile Include="Administration\User\UserGeneralManager.cs" />
     <Compile Include="Administration\User\UserHandler.cs" />
     <Compile Include="Administration\User\UserManager.cs" />
+    <Compile Include="Analysis\CalculateRevenue.cs" />
+    <Compile Include="Analysis\customerRevenue.cs" />
+    <Compile Include="Analysis\CustomerRevenueHandler.cs" />
+    <Compile Include="Analysis\frmCustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\frmCustomerReport.Designer.cs">
+      <DependentUpon>frmCustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\frmGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis\frmGraph.Designer.cs">
+      <DependentUpon>frmGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="General\DBLink.cs" />
     <Compile Include="General\frmSettings.cs">
       <SubType>Form</SubType>
@@ -176,6 +192,12 @@
     <EmbeddedResource Include="Administration\User\frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\frmCustomerReport.resx">
+      <DependentUpon>frmCustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis\frmGraph.resx">
+      <DependentUpon>frmGraph.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="General\frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,9 +250,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Analysis\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

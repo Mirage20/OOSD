@@ -212,5 +212,21 @@ namespace SalesLeadsManagementSystem.Sales
             
             
         }
+
+        public MySqlDataReader readSaleslead(int salesID)
+        {
+            DBLink.openConnection();
+            string query = "SELECT * FROM `salesleads`.`salesleads` WHERE `SalesID`='" + salesID + "';";
+            MySqlDataReader saleslead = DBLink.executeReadQuarry(query);
+            return saleslead;
+        }
+
+        public MySqlDataReader sales(int customerID, DateTime startDate, DateTime endDate)
+        {
+            DBLink.openConnection();
+            string query = "SELECT * FROM `salesleads`.`salesleads` WHERE `CustomerID`='" + customerID + "' AND `BillIssueDate` BETWEEN '" + startDate.ToString("yyyy-MM-dd") + "' AND '" + endDate.ToString("yyyy-MM-dd") + "';";
+            MySqlDataReader sales = DBLink.executeReadQuarry(query);
+            return sales;
+        }
     }
 }
