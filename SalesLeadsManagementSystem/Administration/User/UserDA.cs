@@ -88,10 +88,71 @@ namespace SalesLeadsManagementSystem.Administration.User
             return predecessorList;
         }
         //Chamil
-
-        public string[] getSuccesors(int permissionLevel,string username)
+        /// <summary>
+        /// returns the successor array when permission level and username is given.
+        /// </summary>
+        /// <param name="permissionLevel"></param>
+        /// <param name="username"></param>
+        /// <returns>if user is engineer returns null</returns>
+        public string[] getSuccesors(Security.Permissions permissionLevel,string username)
         {
-            throw new NotImplementedException();
+            
+            switch (permissionLevel)
+            {
+                
+                case SalesLeadsManagementSystem.Security.Permissions.NoPermissions:
+                    return null;
+                    
+                case SalesLeadsManagementSystem.Security.Permissions.Engineer:
+                    return null;
+                    
+                case SalesLeadsManagementSystem.Security.Permissions.AccountManager:
+                    return null;
+                    
+                case SalesLeadsManagementSystem.Security.Permissions.Manager:
+                    string sqlUser1 = "SELECT `UserName` FROM `salesleads`.`user` WHERE `Predecessor`='" + username + "';";
+                    List<string> successorArray1 = new List<string>();
+                    DBLink.openConnection();
+
+                    MySqlDataReader userData1 = DBLink.executeReadQuarry(sqlUser1);
+
+                    while (userData1.Read())
+                    {
+                        successorArray1.Add(userData1.GetString(0));
+       
+                    }
+                    return successorArray1.ToArray();
+                    
+                case SalesLeadsManagementSystem.Security.Permissions.DeputyGeneralManager:
+                    string sqlUser2 = "SELECT `UserName` FROM `salesleads`.`user` WHERE `Permissions` >2 AND `Permissions` <4 ;";
+                    List<string> successorArray2 = new List<string>();
+                    DBLink.openConnection();
+
+                    MySqlDataReader userData2 = DBLink.executeReadQuarry(sqlUser2);
+
+                    while (userData2.Read())
+                    {
+                        successorArray2.Add(userData2.GetString(0));
+                    }
+                    return successorArray2.ToArray();
+                    
+                case SalesLeadsManagementSystem.Security.Permissions.GeneralManager:
+                    string sqlUser3 = "SELECT `UserName` FROM `salesleads`.`user` WHERE `Permissions` >2 AND `Permissions` <5 ;";
+                    List<string> successorArray3 = new List<string>();
+                    DBLink.openConnection();
+
+                    MySqlDataReader userData3 = DBLink.executeReadQuarry(sqlUser3);
+
+                    while (userData3.Read())
+                    {
+                        successorArray3.Add(userData3.GetString(0));
+                    }
+                    return successorArray3.ToArray();
+                    
+                
+                    
+            }
+            return null;
         }
     }
 }

@@ -89,7 +89,7 @@ namespace SalesLeadsManagementSystem.Administration.User
 
         public string[] getSuccesors()
         {
-            return UserDA.getInstance().getSuccesors(this.permissions, this.userName);
+            return UserDA.getInstance().getSuccesors((Security.Permissions)this.permissions, this.userName);
         }
     }
 }
