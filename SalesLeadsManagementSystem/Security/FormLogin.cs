@@ -1,4 +1,4 @@
-﻿#define DevoloperMode         //Set DevoloperMode to bypass login.
+﻿#define Devoloper         //Set DevoloperMode to bypass login.
 
 using System;
 using System.Collections.Generic;

@@ -96,6 +96,13 @@ namespace SalesLeadsManagementSystem.General
            
         }
 
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSettings newSettings = new frmSettings();
+            Security.SecureHandler secHandler = new Security.SecureHandler(newSettings);
+            newSettings.ShowDialog();
+        }
+
        
     }
 }

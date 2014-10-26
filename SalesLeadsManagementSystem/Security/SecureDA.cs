@@ -11,7 +11,7 @@ namespace SalesLeadsManagementSystem.Security
     {
 
 
-        private static SecureDA instance = null;
+        private static SecureDA instance = null;            // Singleton pattern Implementation
 
         private SecureDA() { }
 
@@ -24,7 +24,7 @@ namespace SalesLeadsManagementSystem.Security
             return instance;
         }
 
-        public bool addToDatabase(Secure newSecureData)
+        public bool addToDatabase(Secure newSecureData)  // Add to database newSecureDAta
         {
             string sqlAddSecureUser = "INSERT INTO `salesleads`.`secure` (`UserName`, `Password`, `SecurityQuestion`, `Answer`) VALUES ('" + newSecureData.Username + "', '" + newSecureData.Password + "', '" + newSecureData.Question + "', '" + newSecureData.Answer + "');";
             DBLink.openConnection();
@@ -33,7 +33,7 @@ namespace SalesLeadsManagementSystem.Security
             return result;
         }
 
-        public bool updateToDatabase(Secure existingSecureData)
+        public bool updateToDatabase(Secure existingSecureData) // Update to database existingSecureData
         {
             string sqlUpdateSecureUser = "UPDATE `salesleads`.`secure` SET `Password` = '" + existingSecureData.Password + "', `SecurityQuestion` = '" + existingSecureData.Question + "', `Answer` = '" + existingSecureData.Answer + "' WHERE `secure`.`UserName` = '" + existingSecureData.Username + "';";
             DBLink.openConnection();
@@ -42,7 +42,7 @@ namespace SalesLeadsManagementSystem.Security
             return result;
         }
 
-        public Secure readFromDatabase(string username)
+        public Secure readFromDatabase(string username) // Read the Secure data from the database by the username
         {
             DBLink.openConnection();
 
