@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmComment));
             this.dataGridViewComments = new System.Windows.Forms.DataGridView();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -180,6 +181,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.dataGridViewComments);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmComment";
             this.Text = "frmComment";
             this.Load += new System.EventHandler(this.frmComment_Load);

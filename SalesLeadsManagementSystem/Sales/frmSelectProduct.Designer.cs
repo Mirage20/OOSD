@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelectProduct));
             this.txtSerchProduct = new System.Windows.Forms.TextBox();
             this.cmbProSearch = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -127,6 +128,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.dataGridViewselectpro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSelectProduct";
             this.Text = "Select Product";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewselectpro)).EndInit();

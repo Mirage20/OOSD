@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddUpdateSalesLead));
             this.label1 = new System.Windows.Forms.Label();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.btnPickCustomer = new System.Windows.Forms.Button();
@@ -641,6 +642,7 @@
             this.Controls.Add(this.groupBoxDetails);
             this.Controls.Add(this.groupBoxDates);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmAddUpdateSalesLead";
             this.Text = "frmNewSalesLead";

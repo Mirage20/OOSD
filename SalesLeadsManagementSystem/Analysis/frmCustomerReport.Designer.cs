@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerReport));
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.btnSearRevenue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -167,8 +168,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSearRevenue);
             this.Controls.Add(this.cmbCustomer);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCustomerReport";
-            this.Text = "frmReport";
+            this.Text = "Revenue Analysis";
             this.Load += new System.EventHandler(this.frmCustomerReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRevenue)).EndInit();
             this.ResumeLayout(false);

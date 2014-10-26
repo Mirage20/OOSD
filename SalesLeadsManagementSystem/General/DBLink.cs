@@ -35,9 +35,9 @@ namespace SalesLeadsManagementSystem.General
                MessageBox.Show("Connected...");
                
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Unable to connect to the Sever", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(-1);
             }
             dbConnection.Close();

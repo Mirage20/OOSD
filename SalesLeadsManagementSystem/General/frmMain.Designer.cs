@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.mnuStripMain = new System.Windows.Forms.MenuStrip();
             this.applicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,11 +44,11 @@
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewHelptoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelPermissionLevel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ViewHelptoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.SuspendLayout();
@@ -173,10 +174,16 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
+            // ViewHelptoolStripMenuItem
+            // 
+            this.ViewHelptoolStripMenuItem.Name = "ViewHelptoolStripMenuItem";
+            this.ViewHelptoolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.ViewHelptoolStripMenuItem.Text = "&View Help";
+            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -203,12 +210,6 @@
             this.toolStripStatusLabelPermissionLevel.Size = new System.Drawing.Size(95, 17);
             this.toolStripStatusLabelPermissionLevel.Text = "Permission Level";
             // 
-            // ViewHelptoolStripMenuItem
-            // 
-            this.ViewHelptoolStripMenuItem.Name = "ViewHelptoolStripMenuItem";
-            this.ViewHelptoolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ViewHelptoolStripMenuItem.Text = "&View Help";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,10 +218,12 @@
             this.ClientSize = new System.Drawing.Size(689, 386);
             this.Controls.Add(this.statusStripMain);
             this.Controls.Add(this.mnuStripMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mnuStripMain;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Salesleads Management System";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.mnuStripMain.ResumeLayout(false);

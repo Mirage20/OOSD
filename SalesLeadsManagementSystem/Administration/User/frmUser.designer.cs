@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
             this.chkAddMode = new System.Windows.Forms.CheckBox();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -245,6 +246,7 @@
             this.Controls.Add(this.txtRating);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtUserName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUser";
             this.Text = "frmnewUser";
             this.Load += new System.EventHandler(this.frmUser_Load);

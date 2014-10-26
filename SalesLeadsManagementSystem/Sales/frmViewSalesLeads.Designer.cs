@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViewSalesLeads));
             this.dataGridViewSalesLeads = new System.Windows.Forms.DataGridView();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -516,9 +517,10 @@
             this.Controls.Add(this.groupBoxColumnSelect);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewSalesLeads);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmViewSalesLeads";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmViewSalesLeads";
+            this.Text = "Salesleads";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmViewSalesLeads_FormClosing);
             this.Load += new System.EventHandler(this.frmViewSalesLeads_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalesLeads)).EndInit();
