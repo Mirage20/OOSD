@@ -82,6 +82,25 @@ namespace SalesLeadsManagementSystem.Administration.Customer
         {
             isAddMode = chkAddMode.Checked;
             this.updateControls();
+
+            if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.AccountManager)
+            {
+                btnAddUpdate.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Manager)
+            {               
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Engineer)
+            {
+                btnAddUpdate.Enabled = false;
+                chkAddMode.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.DeputyGeneralManager)
+            {
+
+            }
         }
 
         private void dataGridViewCustomer_SelectionChanged(object sender, EventArgs e)

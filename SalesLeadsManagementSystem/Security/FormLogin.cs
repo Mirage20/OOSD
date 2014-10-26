@@ -45,9 +45,9 @@ namespace SalesLeadsManagementSystem.Security
             MessageBox.Show("Elaz..(y)");
             General.frmMain mainForm = new General.frmMain();
             Administration.User.User devUser= new Administration.User.User();
-            devUser.Permissions = 5;
+            devUser.Permissions = 3;
             devUser.Name = "Developer";
-            devUser.UserName = "120010B";
+            devUser.UserName = "120195T";
             
             General.frmMain.AppUser = devUser;
 

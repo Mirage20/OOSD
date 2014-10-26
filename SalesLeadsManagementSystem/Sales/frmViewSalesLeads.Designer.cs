@@ -518,6 +518,7 @@
             this.Name = "frmViewSalesLeads";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmViewSalesLeads";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmViewSalesLeads_FormClosing);
             this.Load += new System.EventHandler(this.frmViewSalesLeads_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalesLeads)).EndInit();
             this.groupBox1.ResumeLayout(false);

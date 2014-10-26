@@ -1,4 +1,32 @@
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Properties.Resources.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmLogin.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.General.frmMain.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmAddUpdateSalesLead.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmViewSalesLeads.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmSelectCustomer.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.frmSelectProduct.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csprojResolveAssemblyReference.cache
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
+C:\Users\Sudaraka\Source\Repos\OOSD\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
+C:\Users\Sudaraka\Source\Repos\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
+C:\Users\Sudaraka\Source\Repos\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.Customer.frmCustomer.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.Product.frmProduct.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Administration.User.frmUser.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.Comment.frmComment.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Sales.Quotation.frmQuotation.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\SalesLeadsManagementSystem\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmResetPassword.resources
+D:\OOSD Project\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe.config
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
+D:\OOSD Project\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csprojResolveAssemblyReference.cache
@@ -16,5 +44,3 @@ E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLea
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Properties.Resources.resources
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmResetPassword.resources
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
-E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.exe
-E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.pdb

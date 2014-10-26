@@ -120,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 19);
+            this.label4.Location = new System.Drawing.Point(12, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 8;
@@ -129,7 +129,7 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(86, 32);
+            this.lblUserName.Location = new System.Drawing.Point(86, 43);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(0, 13);
             this.lblUserName.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(14, 419);
             this.label5.Name = "label5";
@@ -154,7 +154,7 @@
             // 
             // SLID
             // 
-            this.SLID.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SLID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.SLID.AutoSize = true;
             this.SLID.BackColor = System.Drawing.SystemColors.Control;
             this.SLID.Location = new System.Drawing.Point(133, 419);

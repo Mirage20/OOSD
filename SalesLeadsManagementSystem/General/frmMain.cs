@@ -93,6 +93,24 @@ namespace SalesLeadsManagementSystem.General
         {
             statusStripMain.Items[0].Text = "Username: " + ApplicationUser.Name;
             statusStripMain.Items[1].Text = "PermissionLevel: " +  ApplicationUser.getPermissionLevel();
+
+            if(ApplicationUser.getPermissionLevel()==Security.Permissions.AccountManager)
+            {
+                usersToolStripMenuItem.Enabled = false;
+            }
+            else if(ApplicationUser.getPermissionLevel()==Security.Permissions.Manager)
+            {
+
+            }
+            else if(ApplicationUser.getPermissionLevel()==Security.Permissions.Engineer)
+            {
+                addSalesLeadToolStripMenuItem.Enabled = false;
+                usersToolStripMenuItem.Enabled = false;
+            }
+            else if(ApplicationUser.getPermissionLevel()==Security.Permissions.DeputyGeneralManager)
+            {
+
+            }
            
         }
 

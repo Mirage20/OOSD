@@ -8,5 +8,9 @@ namespace SalesLeadsManagementSystem.Administration.User
 {
     class UserGeneralManager:UserManager
     {
+        public string[] getSuccesors()
+        {
+            return UserDA.getInstance().getSuccesors((Security.Permissions)Permissions, this.UserName);
+        }
     }
 }

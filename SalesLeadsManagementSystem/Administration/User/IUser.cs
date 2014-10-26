@@ -8,5 +8,7 @@ namespace SalesLeadsManagementSystem.Administration.User
 {
     interface IUser
     {
+        string[] getSuccesors();
+        
     }
 }

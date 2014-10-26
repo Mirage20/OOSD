@@ -167,6 +167,36 @@ namespace SalesLeadsManagementSystem.Sales
                 btnAddUpdate.Text = "&Update";
                 this.updateControls();
             }
+
+            if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.AccountManager)
+            {
+
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Manager)
+            {
+
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Engineer)
+            {
+                
+                groupBoxDetails.Enabled = false;
+                groupBoxExtraDetails.Enabled = false;
+                dateTimePickerAgreementSign.Enabled = false;
+                dateTimePickerBillIssue.Enabled = false;
+                dateTimePickerClosed.Enabled = false;
+                dateTimePickerCustomerConfirm.Enabled = false;
+                dateTimePickerDiscon.Enabled = false;
+                dateTimePickerDSP.Enabled = false;
+                txtCloseReason.Enabled = false;
+                txtDisconReason.Enabled = false;
+                cmbFirstBill.Enabled = false;
+                btnAddUpdate.Enabled = false;
+                btnPurchaseFileAdd.Enabled = false;
+            }
+            else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.DeputyGeneralManager)
+            {
+
+            }
         }
 
         private void resetControls()

@@ -30,11 +30,73 @@ namespace SalesLeadsManagementSystem.Sales
                 autoCustomerList.Add(dataFilterSalesleads.Table.Rows[i][3].ToString());
 
             txtSearch.AutoCompleteCustomSource = autoCustomerList;
-
+            this.loadColumnVisibilitySettings();
             this.selectVisibleColumns();
+
+
+            
+        }
+
+        public void loadColumnVisibilitySettings()
+        {
+            chkSalesID.Checked=Properties.Settings.Default.Col1;
+            chkCustomerID.Checked = Properties.Settings.Default.Col2;
+            chkCustomerName.Checked = Properties.Settings.Default.Col3;
+            chkCustomerShortName.Checked = Properties.Settings.Default.Col4;
+            chkProductID.Checked = Properties.Settings.Default.Col5;
+            chkProductName.Checked = Properties.Settings.Default.Col6;
+            chkIssueDate.Checked = Properties.Settings.Default.Col7;
+            chkRevenueType.Checked = Properties.Settings.Default.Col8;
+            chkMonthlyRevenue.Checked = Properties.Settings.Default.Col9;
+            chkHadTest.Checked = Properties.Settings.Default.Col10;
+            chkProjectRevenue.Checked = Properties.Settings.Default.Col11;
+            chkProjectPaid.Checked = Properties.Settings.Default.Col12;
+            chkCustomerConfirmDate.Checked = Properties.Settings.Default.Col13;
+            chkAgreementSignDate.Checked = Properties.Settings.Default.Col14;
+            chkDSP.Checked = Properties.Settings.Default.Col15;
+            chkFirstBillIssued.Checked = Properties.Settings.Default.Col16;
+            chkBillIssueDate.Checked = Properties.Settings.Default.Col17;
+            chkCloseReason.Checked = Properties.Settings.Default.Col18;
+            chkClosedDate.Checked = Properties.Settings.Default.Col19;
+            chkDisconnectedDate.Checked = Properties.Settings.Default.Col20;
+            chkDisconnectReason.Checked = Properties.Settings.Default.Col21;
+            chkCoustomerFeedBack.Checked = Properties.Settings.Default.Col22;
+            chkDiscount.Checked = Properties.Settings.Default.Col23;
+            chkNotes.Checked = Properties.Settings.Default.Col24;
+            chkAccManager.Checked = Properties.Settings.Default.Col25;
         }
 
 
+        public void saveColumnVisibilitySettings()
+        {
+            Properties.Settings.Default.Col1=chkSalesID.Checked ;
+            Properties.Settings.Default.Col2=chkCustomerID.Checked;
+            Properties.Settings.Default.Col3=chkCustomerName.Checked;
+            Properties.Settings.Default.Col4=chkCustomerShortName.Checked;
+            Properties.Settings.Default.Col5= chkProductID.Checked;
+            Properties.Settings.Default.Col6=chkProductName.Checked;
+            Properties.Settings.Default.Col7=chkIssueDate.Checked;
+            Properties.Settings.Default.Col8=chkRevenueType.Checked;
+            Properties.Settings.Default.Col9=chkMonthlyRevenue.Checked;
+            Properties.Settings.Default.Col10=chkHadTest.Checked;
+            Properties.Settings.Default.Col11=chkProjectRevenue.Checked;
+            Properties.Settings.Default.Col12=chkProjectPaid.Checked;
+            Properties.Settings.Default.Col13=chkCustomerConfirmDate.Checked;
+            Properties.Settings.Default.Col14=chkAgreementSignDate.Checked;
+            Properties.Settings.Default.Col15=chkDSP.Checked;
+            Properties.Settings.Default.Col16=chkFirstBillIssued.Checked;
+            Properties.Settings.Default.Col17=chkBillIssueDate.Checked;
+            Properties.Settings.Default.Col18=chkCloseReason.Checked;
+            Properties.Settings.Default.Col19=chkClosedDate.Checked;
+            Properties.Settings.Default.Col20=chkDisconnectedDate.Checked;
+            Properties.Settings.Default.Col21=chkDisconnectReason.Checked;
+            Properties.Settings.Default.Col22=chkCoustomerFeedBack.Checked;
+            Properties.Settings.Default.Col23=chkDiscount.Checked;
+            Properties.Settings.Default.Col24=chkNotes.Checked;
+            Properties.Settings.Default.Col25=chkAccManager.Checked;
+
+            Properties.Settings.Default.Save();
+        }
 
         public void refreshControls()
         {
@@ -261,6 +323,11 @@ namespace SalesLeadsManagementSystem.Sales
             CommentHandler newhandler = new CommentHandler(newCommnt, new Comment.Comment());
             newCommnt.SelectedSalesLeadsID = (int)dataGridViewSalesLeads.SelectedRows[0].Cells[0].Value;
             newCommnt.Show();
+        }
+
+        private void frmViewSalesLeads_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            saveColumnVisibilitySettings();
         }
     }
 }

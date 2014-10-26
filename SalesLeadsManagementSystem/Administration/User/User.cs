@@ -86,5 +86,10 @@ namespace SalesLeadsManagementSystem.Administration.User
             return UserDA.getInstance().getPredecessorList(permissions);
         }
         //Chamil
+
+        public string[] getSuccesors()
+        {
+            return UserDA.getInstance().getSuccesors((Security.Permissions)this.permissions, this.userName);
+        }
     }
 }

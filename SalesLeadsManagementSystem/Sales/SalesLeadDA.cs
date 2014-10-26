@@ -176,7 +176,41 @@ namespace SalesLeadsManagementSystem.Sales
 
         public  System.Data.DataView readAllSales()
         {
-            return General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`");
+            Security.Permissions permission = (Security.Permissions)frmMain.AppUser.Permissions;
+            string username = frmMain.AppUser.UserName;
+            if (permission == Security.Permissions.NoPermissions)
+            {
+                return null;
+            }
+            else if (permission == Security.Permissions.Engineer)
+            {
+                return General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`;");
+            }
+            else if (permission == Security.Permissions.AccountManager)
+            {
+                return General.DBLink.executeTableQuarry("SELECT * FROM `salesleads` WHERE `AccManager` = '"+ username + "';");
+            }
+            else if (permission == Security.Permissions.Manager)
+            {
+                string[] successorList = Administration.User.UserDA.getInstance().getSuccesors(permission,username);
+                string sqlAccManagerlist = "";
+                for (int i = 0; i < successorList.Length; i++)
+                {
+                    if (i == (successorList.Length - 1))
+                    {
+                        sqlAccManagerlist += "`AccManager` = '" + successorList[i] + "';";
+                    }
+                    else
+                    {
+                        sqlAccManagerlist += "`AccManager` = '" + successorList[i] + "' OR";
+                    }
+                }
+                return General.DBLink.executeTableQuarry("SELECT * FROM `salesleads` WHERE "+sqlAccManagerlist);
+            }
+           
+            return General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`;");
+            
+            
         }
     }
 }
