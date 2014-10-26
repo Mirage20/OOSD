@@ -237,14 +237,19 @@ namespace SalesLeadsManagementSystem.Sales
 
         private void btnAddUpdate_Click(object sender, EventArgs e)
         {
-
+            if (txtCustomerID.Text.Trim().Equals("") || txtProductID.Text.Trim().Equals(""))
+            {
+                MessageBox.Show("Please select a CustomerID and ProductID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (this.isAdd)
             {  
                 addUpdateSalesleadsHandler.newSaleslead();
+                MessageBox.Show("Sales Lead Added Successfully", "Sales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
             else
-            {                
-                             
+            {                                       
                 addUpdateSalesleadsHandler.updateSaleslead();
             }
             if (this.baseSalesLeadForm != null)
@@ -363,7 +368,11 @@ namespace SalesLeadsManagementSystem.Sales
 
         private void btnPurchaseFileView_Click(object sender, EventArgs e)
         {
-            addUpdateSalesleadsHandler.showPurchaseOrderFile();
+            if (!isAdd)
+            {
+                addUpdateSalesleadsHandler.showPurchaseOrderFile();
+            }
+
         }
 
         public void updateCustomerID(int CustomerID)
@@ -391,13 +400,18 @@ namespace SalesLeadsManagementSystem.Sales
 
         private void btnQutationFilesView_Click(object sender, EventArgs e)
         {
-            Quotation.QuotationHandler thisQuotationHandler = new Quotation.QuotationHandler();
-            Quotation.frmQuotation frmaddViewQuotationData = new Quotation.frmQuotation();
+            if (!isAdd)
+            {
+                Quotation.QuotationHandler thisQuotationHandler = new Quotation.QuotationHandler();
+                Quotation.frmQuotation frmaddViewQuotationData = new Quotation.frmQuotation();
 
-            thisQuotationHandler.FrmQuotation = frmaddViewQuotationData;
-            frmaddViewQuotationData.QuotationHandler = thisQuotationHandler;
-            frmaddViewQuotationData.SalesID = this.selectedSalesLeadID;
-            frmaddViewQuotationData.Show();
+                thisQuotationHandler.FrmQuotation = frmaddViewQuotationData;
+                frmaddViewQuotationData.QuotationHandler = thisQuotationHandler;
+                frmaddViewQuotationData.SalesID = this.selectedSalesLeadID;
+                frmaddViewQuotationData.Show();
+            }
+            else
+                MessageBox.Show("Please add saleslead before adding quotations", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         

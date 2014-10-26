@@ -34,8 +34,12 @@ namespace SalesLeadsManagementSystem.Sales
 
         private void updatecontrols()
         {
-            
-            dataGridViewselectcus.DataSource = General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`.`customer` WHERE `salesleads`.`customer`.`" +getColumnName_Customer(cmbCusSearch.SelectedIndex) + "` LIKE '%" + txtSerchCus.Text + "%';");
+            if(General.frmMain.AppUser.Permissions==2)
+            {
+                dataGridViewselectcus.DataSource = General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`.`customer` WHERE `AccManager`= '"+ General.frmMain.AppUser.UserName +"' AND `salesleads`.`customer`.`" + getColumnName_Customer(cmbCusSearch.SelectedIndex) + "` LIKE '%" + txtSerchCus.Text + "%';");
+            }
+            else
+                dataGridViewselectcus.DataSource = General.DBLink.executeTableQuarry("SELECT * FROM `salesleads`.`customer` WHERE `salesleads`.`customer`.`" +getColumnName_Customer(cmbCusSearch.SelectedIndex) + "` LIKE '%" + txtSerchCus.Text + "%';");
         }
 
        
