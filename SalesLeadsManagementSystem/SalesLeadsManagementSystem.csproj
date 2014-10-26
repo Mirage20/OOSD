@@ -85,7 +85,7 @@
     <Compile Include="Administration\User\UserHandler.cs" />
     <Compile Include="Administration\User\UserManager.cs" />
     <Compile Include="Analysis\CalculateRevenue.cs" />
-    <Compile Include="Analysis\customerRevenue.cs" />
+    <Compile Include="Analysis\CustomerRevenue.cs" />
     <Compile Include="Analysis\CustomerRevenueHandler.cs" />
     <Compile Include="Analysis\frmCustomerReport.cs">
       <SubType>Form</SubType>
@@ -98,6 +98,12 @@
     </Compile>
     <Compile Include="Analysis\frmGraph.Designer.cs">
       <DependentUpon>frmGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="General\DBLink.cs" />
     <Compile Include="General\frmSettings.cs">
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Analysis\frmGraph.resx">
       <DependentUpon>frmGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General\frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>

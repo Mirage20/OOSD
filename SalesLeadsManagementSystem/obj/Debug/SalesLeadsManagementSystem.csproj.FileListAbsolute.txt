@@ -68,3 +68,6 @@ F:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Secu
 F:\OOSD\git\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
 F:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.exe
 F:\OOSD\git\SalesLeadsManagementSystem\bin\Debug\SalesLeadsManagementSystem.pdb
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Analysis.frmCustomerReport.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Analysis.frmGraph.resources
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.General.AboutBox.resources

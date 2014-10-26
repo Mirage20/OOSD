@@ -21,12 +21,12 @@ namespace SalesLeadsManagementSystem.Analysis
         }
 
         //modify more
-        public float calcRevenuePerMonth(int customerID, DateTime startDate, DateTime endDate)
+        public float calcRevenuePerMonth(int customerID, DateTime startDate, DateTime endDate,bool needAll)
         {
             
             DateTime start;
             
-            MySqlDataReader sales = SalesLeadDA.getInstance().sales(customerID,startDate,endDate);
+            MySqlDataReader sales = SalesLeadDA.getInstance().sales(customerID,startDate,endDate,needAll);
             start = Convert.ToDateTime(startDate);
             float monthly = 0f;
             while(sales.Read()){
@@ -37,16 +37,16 @@ namespace SalesLeadsManagementSystem.Analysis
             return monthly;
         }
 
-        public void getRevenue(int customerID, DateTime start, DateTime end)
+        public void getRevenue(int customerID, DateTime start, DateTime end,bool needAll)
         {
             revenue.Clear();
             DateTime date = start;
             DateTime next;
-            int count = 0;
+            
             while(DateTime.Compare(date,end)<0)
             {
                 next = date.AddMonths(1);
-                revenue.Add(calcRevenuePerMonth(customerID, date, next));
+                revenue.Add(calcRevenuePerMonth(customerID, date, next,needAll));
                 date = date.AddMonths(1);
                 
             }

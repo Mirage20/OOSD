@@ -57,7 +57,7 @@ namespace SalesLeadsManagementSystem.Security
             UserLogin user = new UserLogin(txtUsername.Text.Trim(), txtPassword.Text.Trim());
             if(user.Login())
             {
-                MessageBox.Show("Elaz..(y)");
+                MessageBox.Show("Login Success.","Welcome",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 General.frmMain mainForm = new General.frmMain();
                 General.frmMain.AppUser = Administration.User.UserDA.getInstance().readFromDatabase(txtUsername.Text.Trim());
                 mainForm.Show();

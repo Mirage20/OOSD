@@ -53,7 +53,7 @@ namespace SalesLeadsManagementSystem.Administration.User
 
             if (userData.Read())
             {
-                User existingUser = new User();
+                User existingUser = FactoryUser.getUserObj((Security.Permissions)userData.GetInt32(2));
                 existingUser.UserName = userData.GetString(0);
                 existingUser.Name = userData.GetString(1);
                 existingUser.Permissions = userData.GetInt32(2);

@@ -221,10 +221,18 @@ namespace SalesLeadsManagementSystem.Sales
             return saleslead;
         }
 
-        public MySqlDataReader sales(int customerID, DateTime startDate, DateTime endDate)
+        public MySqlDataReader sales(int customerID, DateTime startDate, DateTime endDate,bool needAll)
         {
             DBLink.openConnection();
-            string query = "SELECT * FROM `salesleads`.`salesleads` WHERE `CustomerID`='" + customerID + "' AND `BillIssueDate` BETWEEN '" + startDate.ToString("yyyy-MM-dd") + "' AND '" + endDate.ToString("yyyy-MM-dd") + "';";
+            string query;
+            if (needAll)
+            {
+                 query = "SELECT * FROM `salesleads`.`salesleads` WHERE `BillIssueDate` BETWEEN '" + startDate.ToString("yyyy-MM-dd") + "' AND '" + endDate.ToString("yyyy-MM-dd") + "';";
+            }
+            else
+            {
+                 query = "SELECT * FROM `salesleads`.`salesleads` WHERE `CustomerID`='" + customerID + "' AND `BillIssueDate` BETWEEN '" + startDate.ToString("yyyy-MM-dd") + "' AND '" + endDate.ToString("yyyy-MM-dd") + "';";
+            }
             MySqlDataReader sales = DBLink.executeReadQuarry(query);
             return sales;
         }

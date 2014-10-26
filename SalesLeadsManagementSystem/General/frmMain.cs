@@ -128,6 +128,12 @@ namespace SalesLeadsManagementSystem.General
             viewReport.Show();
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox aboutUs = new AboutBox();
+            aboutUs.ShowDialog();
+        }
+
        
     }
 }

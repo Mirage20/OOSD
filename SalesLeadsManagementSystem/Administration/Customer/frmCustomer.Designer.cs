@@ -145,7 +145,7 @@
             // 
             // btnAddUpdate
             // 
-            this.btnAddUpdate.Location = new System.Drawing.Point(510, 127);
+            this.btnAddUpdate.Location = new System.Drawing.Point(490, 188);
             this.btnAddUpdate.Name = "btnAddUpdate";
             this.btnAddUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnAddUpdate.TabIndex = 12;
@@ -155,7 +155,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(510, 157);
+            this.btnCancel.Location = new System.Drawing.Point(571, 188);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 13;
@@ -166,6 +166,7 @@
             // dataGridViewCustomer
             // 
             this.dataGridViewCustomer.AllowUserToAddRows = false;
+            this.dataGridViewCustomer.AllowUserToDeleteRows = false;
             this.dataGridViewCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

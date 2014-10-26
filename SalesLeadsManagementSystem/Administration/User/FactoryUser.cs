@@ -8,9 +8,9 @@ namespace SalesLeadsManagementSystem.Administration.User
 {
     abstract class FactoryUser
     {
-        public static IUser getUserObj(Permissions permissionLevel)
+        public static User getUserObj(Permissions permissionLevel)
         {
-            IUser userObj = null;
+            User userObj = null;
 
             switch (permissionLevel)
             {

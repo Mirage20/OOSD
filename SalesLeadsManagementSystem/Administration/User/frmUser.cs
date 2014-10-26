@@ -144,7 +144,7 @@ namespace SalesLeadsManagementSystem.Administration.User
             }
             else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Manager)
             {
-                chkAddMode.Enabled = false;
+                btnAddUpdate.Enabled = false;
                 chkAddMode.Enabled = false;
             }
             else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.Engineer)
@@ -154,6 +154,7 @@ namespace SalesLeadsManagementSystem.Administration.User
             }
             else if (General.frmMain.AppUser.getPermissionLevel() == Security.Permissions.DeputyGeneralManager)
             {
+                btnAddUpdate.Enabled = false;
                 chkAddMode.Enabled = false;
             }
         }

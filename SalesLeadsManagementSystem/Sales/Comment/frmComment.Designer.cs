@@ -46,6 +46,7 @@
             // dataGridViewComments
             // 
             this.dataGridViewComments.AllowUserToAddRows = false;
+            this.dataGridViewComments.AllowUserToDeleteRows = false;
             this.dataGridViewComments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -99,7 +100,7 @@
             // chkAddMode
             // 
             this.chkAddMode.AutoSize = true;
-            this.chkAddMode.Location = new System.Drawing.Point(477, 97);
+            this.chkAddMode.Location = new System.Drawing.Point(493, 97);
             this.chkAddMode.Name = "chkAddMode";
             this.chkAddMode.Size = new System.Drawing.Size(75, 17);
             this.chkAddMode.TabIndex = 6;

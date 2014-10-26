@@ -35,6 +35,8 @@
             // 
             // chartRevenue
             // 
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Angle = -90;
             chartArea1.AxisX.Title = "Months";
             chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea1.AxisY.Title = "Revenue per Month";

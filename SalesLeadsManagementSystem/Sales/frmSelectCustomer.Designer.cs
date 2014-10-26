@@ -41,6 +41,7 @@
             // dataGridViewselectcus
             // 
             this.dataGridViewselectcus.AllowUserToAddRows = false;
+            this.dataGridViewselectcus.AllowUserToDeleteRows = false;
             this.dataGridViewselectcus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

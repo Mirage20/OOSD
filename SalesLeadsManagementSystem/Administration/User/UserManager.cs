@@ -8,7 +8,7 @@ namespace SalesLeadsManagementSystem.Administration.User
 {
     class UserManager:User
     {
-        public string[] getSuccesors()
+        public new string[] getSuccesors()
         {
             return UserDA.getInstance().getSuccesors((Security.Permissions)Permissions, this.UserName);
         }

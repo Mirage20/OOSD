@@ -44,10 +44,15 @@ namespace SalesLeadsManagementSystem.Analysis
             get { return dataGridViewRevenue; }
         }
 
+        public CheckBox NeddAllRevenue
+        {
+            get { return checkBoxAllRev; }
+        }
+
         public frmCustomerReport()
         {
             InitializeComponent();
-            crHandler = new CustomerRevenueHandler(this, new customerRevenue());
+            crHandler = new CustomerRevenueHandler(this, new CustomerRevenue());
             checkBoxAllRev.Checked = true;
             
         }
@@ -104,9 +109,23 @@ namespace SalesLeadsManagementSystem.Analysis
             crHandler.ViewGraph = new frmGraph(StartDate.Value);
             crHandler.ViewGraph.Data = crHandler.ModelCustomerRevenue.TotalRevenue;
             crHandler.ViewGraph.Series = crHandler.ModelCustomerRevenue.CustomerName;
-            crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, crHandler.ViewGraph.Series);
+            if(checkBoxAllRev.Checked)
+                crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, "All Sales Revenues");
+            else
+                crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, crHandler.ViewGraph.Series);
             crHandler.ViewGraph.Show();
             
+        }
+
+        private void frmCustomerReport_Load(object sender, EventArgs e)
+        {
+            dateTimePickerStart.Value = new DateTime(DateTime.Today.Year, 01, 01);
+            dateTimePickerEnd.Value = new DateTime(DateTime.Today.Year, 12, 31);
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+
         }
         
         

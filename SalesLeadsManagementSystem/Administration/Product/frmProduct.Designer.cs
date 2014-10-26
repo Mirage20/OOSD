@@ -45,7 +45,7 @@
             // 
             // btnAddUpdate
             // 
-            this.btnAddUpdate.Location = new System.Drawing.Point(348, 126);
+            this.btnAddUpdate.Location = new System.Drawing.Point(456, 221);
             this.btnAddUpdate.Name = "btnAddUpdate";
             this.btnAddUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnAddUpdate.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(348, 155);
+            this.btnCancel.Location = new System.Drawing.Point(537, 221);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 1;
@@ -67,14 +67,14 @@
             // 
             this.txtProductName.Location = new System.Drawing.Point(96, 25);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(167, 20);
+            this.txtProductName.Size = new System.Drawing.Size(271, 20);
             this.txtProductName.TabIndex = 2;
             // 
             // txtInitialPrice
             // 
             this.txtInitialPrice.Location = new System.Drawing.Point(96, 77);
             this.txtInitialPrice.Name = "txtInitialPrice";
-            this.txtInitialPrice.Size = new System.Drawing.Size(167, 20);
+            this.txtInitialPrice.Size = new System.Drawing.Size(271, 20);
             this.txtInitialPrice.TabIndex = 4;
             // 
             // label1
@@ -118,7 +118,7 @@
             this.txtProductDetails.Location = new System.Drawing.Point(96, 103);
             this.txtProductDetails.Multiline = true;
             this.txtProductDetails.Name = "txtProductDetails";
-            this.txtProductDetails.Size = new System.Drawing.Size(167, 95);
+            this.txtProductDetails.Size = new System.Drawing.Size(271, 95);
             this.txtProductDetails.TabIndex = 9;
             // 
             // cmbCategory
@@ -130,12 +130,13 @@
             "Voice"});
             this.cmbCategory.Location = new System.Drawing.Point(96, 51);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(167, 21);
+            this.cmbCategory.Size = new System.Drawing.Size(271, 21);
             this.cmbCategory.TabIndex = 10;
             // 
             // dataGridViewProduct
             // 
             this.dataGridViewProduct.AllowUserToAddRows = false;
+            this.dataGridViewProduct.AllowUserToDeleteRows = false;
             this.dataGridViewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

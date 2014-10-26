@@ -12,7 +12,7 @@ namespace SalesLeadsManagementSystem.Analysis
     class CustomerRevenueHandler
     {
         private frmCustomerReport viewCustomerReport = null;
-        private customerRevenue modelCustomerRevenue = null;
+        private CustomerRevenue modelCustomerRevenue = null;
         private CalculateRevenue calculator = new CalculateRevenue();
         private frmGraph viewGraph = null;
 
@@ -22,7 +22,7 @@ namespace SalesLeadsManagementSystem.Analysis
             set { viewGraph = value; }
         }
 
-        internal customerRevenue ModelCustomerRevenue
+        internal CustomerRevenue ModelCustomerRevenue
         {
             get { return modelCustomerRevenue; }
             
@@ -30,7 +30,7 @@ namespace SalesLeadsManagementSystem.Analysis
 
 
 
-        public CustomerRevenueHandler(frmCustomerReport viewCustomerReport, customerRevenue modelCustomerRevenue)
+        public CustomerRevenueHandler(frmCustomerReport viewCustomerReport, CustomerRevenue modelCustomerRevenue)
         {
             this.viewCustomerReport = viewCustomerReport;
             this.modelCustomerRevenue = modelCustomerRevenue;
@@ -44,7 +44,7 @@ namespace SalesLeadsManagementSystem.Analysis
             int customerID = Int32.Parse(viewCustomerReport.RevenueGrid.SelectedRows[0].Cells[1].Value.ToString());
             DateTime startDate = viewCustomerReport.StartDate.Value;
             DateTime endDate = viewCustomerReport.EndDate.Value;
-            calculator.getRevenue(customerID,startDate,endDate);
+            calculator.getRevenue(customerID,startDate,endDate,viewCustomerReport.NeddAllRevenue.Checked);
             modelCustomerRevenue.TotalRevenue = calculator.Revenue;
             modelCustomerRevenue.CustomerID = customerID;
             modelCustomerRevenue.CustomerName = viewCustomerReport.RevenueGrid.SelectedRows[0].Cells[2].Value.ToString();

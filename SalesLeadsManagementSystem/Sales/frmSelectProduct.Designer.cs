@@ -92,6 +92,7 @@
             // dataGridViewselectpro
             // 
             this.dataGridViewselectpro.AllowUserToAddRows = false;
+            this.dataGridViewselectpro.AllowUserToDeleteRows = false;
             this.dataGridViewselectpro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

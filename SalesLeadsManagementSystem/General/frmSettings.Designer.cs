@@ -107,6 +107,7 @@
             // 
             this.txtNew2.Location = new System.Drawing.Point(123, 112);
             this.txtNew2.Name = "txtNew2";
+            this.txtNew2.PasswordChar = '*';
             this.txtNew2.Size = new System.Drawing.Size(204, 20);
             this.txtNew2.TabIndex = 6;
             this.txtNew2.TextChanged += new System.EventHandler(this.txtNew2_TextChanged);
@@ -134,6 +135,7 @@
             // 
             this.txtNew1.Location = new System.Drawing.Point(123, 86);
             this.txtNew1.Name = "txtNew1";
+            this.txtNew1.PasswordChar = '*';
             this.txtNew1.Size = new System.Drawing.Size(204, 20);
             this.txtNew1.TabIndex = 3;
             this.txtNew1.TextChanged += new System.EventHandler(this.txtNew1_TextChanged);
@@ -142,6 +144,7 @@
             // 
             this.txtCurrent.Location = new System.Drawing.Point(123, 40);
             this.txtCurrent.Name = "txtCurrent";
+            this.txtCurrent.PasswordChar = '*';
             this.txtCurrent.Size = new System.Drawing.Size(204, 20);
             this.txtCurrent.TabIndex = 2;
             // 
@@ -230,6 +233,7 @@
             // 
             this.txtCurrentPWsq.Location = new System.Drawing.Point(123, 40);
             this.txtCurrentPWsq.Name = "txtCurrentPWsq";
+            this.txtCurrentPWsq.PasswordChar = '*';
             this.txtCurrentPWsq.Size = new System.Drawing.Size(204, 20);
             this.txtCurrentPWsq.TabIndex = 9;
             // 

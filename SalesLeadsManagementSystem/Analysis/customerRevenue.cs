@@ -7,15 +7,15 @@ using SalesLeadsManagementSystem.Sales;
 
 namespace SalesLeadsManagementSystem.Analysis
 {
-    class customerRevenue
+    class CustomerRevenue
     {
         private int customerID = 0;
         private string customerName = "";
-        private string revenueType = "";
+        
         private DateTime Date;
         private List<float> totalRevenue = new List<float>();
 
-        public customerRevenue()
+        public CustomerRevenue()
         {
             Date = new DateTime();
             Date = Convert.ToDateTime(Date.ToString("dd-MM-yyyy"));
@@ -26,7 +26,7 @@ namespace SalesLeadsManagementSystem.Analysis
             get { return totalRevenue; }
             set { totalRevenue = value; }
         }
-        private string accManager = "";
+        
 
         public int CustomerID
         {
@@ -40,7 +40,7 @@ namespace SalesLeadsManagementSystem.Analysis
             set { customerName = value; }
         }
 
-        public customerRevenue getRevenue()
+        public CustomerRevenue getRevenue()
         {
             return this;
         }

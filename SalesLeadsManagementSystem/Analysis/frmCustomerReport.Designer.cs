@@ -46,7 +46,7 @@
             // 
             this.cmbCustomer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cmbCustomer.FormattingEnabled = true;
-            this.cmbCustomer.Location = new System.Drawing.Point(128, 43);
+            this.cmbCustomer.Location = new System.Drawing.Point(126, 28);
             this.cmbCustomer.Name = "cmbCustomer";
             this.cmbCustomer.Size = new System.Drawing.Size(279, 21);
             this.cmbCustomer.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // btnSearRevenue
             // 
-            this.btnSearRevenue.Location = new System.Drawing.Point(426, 41);
+            this.btnSearRevenue.Location = new System.Drawing.Point(438, 31);
             this.btnSearRevenue.Name = "btnSearRevenue";
             this.btnSearRevenue.Size = new System.Drawing.Size(75, 23);
             this.btnSearRevenue.TabIndex = 1;
@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 46);
+            this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 2;
@@ -75,26 +75,30 @@
             // 
             this.dataGridViewRevenue.AllowUserToAddRows = false;
             this.dataGridViewRevenue.AllowUserToDeleteRows = false;
+            this.dataGridViewRevenue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewRevenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRevenue.Location = new System.Drawing.Point(31, 129);
+            this.dataGridViewRevenue.Location = new System.Drawing.Point(12, 114);
             this.dataGridViewRevenue.Name = "dataGridViewRevenue";
+            this.dataGridViewRevenue.ReadOnly = true;
             this.dataGridViewRevenue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewRevenue.Size = new System.Drawing.Size(595, 144);
+            this.dataGridViewRevenue.Size = new System.Drawing.Size(635, 208);
             this.dataGridViewRevenue.TabIndex = 3;
-            
             // 
             // btnReport
             // 
-            this.btnReport.Location = new System.Drawing.Point(184, 299);
+            this.btnReport.Location = new System.Drawing.Point(390, 85);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(127, 23);
             this.btnReport.TabIndex = 4;
             this.btnReport.Text = "Generate Report";
             this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnChart
             // 
-            this.btnChart.Location = new System.Drawing.Point(331, 299);
+            this.btnChart.Location = new System.Drawing.Point(523, 85);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(124, 23);
             this.btnChart.TabIndex = 5;
@@ -105,7 +109,7 @@
             // checkBoxAllRev
             // 
             this.checkBoxAllRev.AutoSize = true;
-            this.checkBoxAllRev.Location = new System.Drawing.Point(519, 42);
+            this.checkBoxAllRev.Location = new System.Drawing.Point(563, 32);
             this.checkBoxAllRev.Name = "checkBoxAllRev";
             this.checkBoxAllRev.Size = new System.Drawing.Size(84, 17);
             this.checkBoxAllRev.TabIndex = 6;
@@ -116,7 +120,7 @@
             // labelSart
             // 
             this.labelSart.AutoSize = true;
-            this.labelSart.Location = new System.Drawing.Point(28, 81);
+            this.labelSart.Location = new System.Drawing.Point(12, 72);
             this.labelSart.Name = "labelSart";
             this.labelSart.Size = new System.Drawing.Size(55, 13);
             this.labelSart.TabIndex = 7;
@@ -125,7 +129,7 @@
             // labelEnd
             // 
             this.labelEnd.AutoSize = true;
-            this.labelEnd.Location = new System.Drawing.Point(267, 81);
+            this.labelEnd.Location = new System.Drawing.Point(165, 72);
             this.labelEnd.Name = "labelEnd";
             this.labelEnd.Size = new System.Drawing.Size(52, 13);
             this.labelEnd.TabIndex = 8;
@@ -134,7 +138,7 @@
             // dateTimePickerStart
             // 
             this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerStart.Location = new System.Drawing.Point(31, 103);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(15, 88);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
             this.dateTimePickerStart.Size = new System.Drawing.Size(147, 20);
             this.dateTimePickerStart.TabIndex = 9;
@@ -142,7 +146,7 @@
             // dateTimePickerEnd
             // 
             this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(270, 103);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(168, 88);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
             this.dateTimePickerEnd.Size = new System.Drawing.Size(147, 20);
             this.dateTimePickerEnd.TabIndex = 10;
@@ -165,7 +169,7 @@
             this.Controls.Add(this.cmbCustomer);
             this.Name = "frmCustomerReport";
             this.Text = "frmReport";
-            
+            this.Load += new System.EventHandler(this.frmCustomerReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRevenue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

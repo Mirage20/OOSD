@@ -72,10 +72,12 @@ namespace SalesLeadsManagementSystem.Sales.Comment
                 label4.Visible = true;
                 lblRealName.Visible = true;
                 lblUserName.Visible = true;
+                txtContent.ReadOnly = true;
                 this.Text = "View Comments";
             }
             else
             {
+                txtContent.ReadOnly = false;
                 btnPost.Visible = true;
                 label1.Visible = false;
                 label3.Visible = false;

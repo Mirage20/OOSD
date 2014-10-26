@@ -37,6 +37,7 @@
             this.addSalesLeadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSalesLeadsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,7 @@
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelPermissionLevel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.viewReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewHelptoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.SuspendLayout();
@@ -125,6 +126,13 @@
             this.analysisToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.analysisToolStripMenuItem.Text = "&Analysis";
             // 
+            // viewReportToolStripMenuItem
+            // 
+            this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
+            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.viewReportToolStripMenuItem.Text = "Revenue &Report";
+            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
+            // 
             // administrationToolStripMenuItem
             // 
             this.administrationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -159,6 +167,7 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ViewHelptoolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
@@ -167,8 +176,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // statusStripMain
             // 
@@ -193,12 +203,11 @@
             this.toolStripStatusLabelPermissionLevel.Size = new System.Drawing.Size(95, 17);
             this.toolStripStatusLabelPermissionLevel.Text = "Permission Level";
             // 
-            // viewReportToolStripMenuItem
+            // ViewHelptoolStripMenuItem
             // 
-            this.viewReportToolStripMenuItem.Name = "viewReportToolStripMenuItem";
-            this.viewReportToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.viewReportToolStripMenuItem.Text = "Revenue &Report";
-            this.viewReportToolStripMenuItem.Click += new System.EventHandler(this.viewReportToolStripMenuItem_Click);
+            this.ViewHelptoolStripMenuItem.Name = "ViewHelptoolStripMenuItem";
+            this.ViewHelptoolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ViewHelptoolStripMenuItem.Text = "&View Help";
             // 
             // frmMain
             // 
@@ -244,6 +253,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelUserName;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelPermissionLevel;
         private System.Windows.Forms.ToolStripMenuItem viewReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ViewHelptoolStripMenuItem;
 
     }
 }

@@ -8,7 +8,7 @@ namespace SalesLeadsManagementSystem.Administration.User
 {
     class UserEngineer:User
     {
-        public string[] getSuccesors()
+        public new string[] getSuccesors()
         {
             return null ;
         }

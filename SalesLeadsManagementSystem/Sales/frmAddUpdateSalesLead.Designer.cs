@@ -101,6 +101,7 @@
             // 
             this.txtCustomerID.Location = new System.Drawing.Point(100, 27);
             this.txtCustomerID.Name = "txtCustomerID";
+            this.txtCustomerID.ReadOnly = true;
             this.txtCustomerID.Size = new System.Drawing.Size(72, 20);
             this.txtCustomerID.TabIndex = 0;
             // 
@@ -137,6 +138,7 @@
             // 
             this.txtProductID.Location = new System.Drawing.Point(100, 53);
             this.txtProductID.Name = "txtProductID";
+            this.txtProductID.ReadOnly = true;
             this.txtProductID.Size = new System.Drawing.Size(72, 20);
             this.txtProductID.TabIndex = 1;
             // 
