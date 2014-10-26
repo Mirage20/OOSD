@@ -33,7 +33,6 @@
             this.btnSearRevenue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewRevenue = new System.Windows.Forms.DataGridView();
-            this.btnReport = new System.Windows.Forms.Button();
             this.btnChart = new System.Windows.Forms.Button();
             this.checkBoxAllRev = new System.Windows.Forms.CheckBox();
             this.labelSart = new System.Windows.Forms.Label();
@@ -86,16 +85,6 @@
             this.dataGridViewRevenue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewRevenue.Size = new System.Drawing.Size(635, 208);
             this.dataGridViewRevenue.TabIndex = 3;
-            // 
-            // btnReport
-            // 
-            this.btnReport.Location = new System.Drawing.Point(390, 85);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(127, 23);
-            this.btnReport.TabIndex = 4;
-            this.btnReport.Text = "Generate Report";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnChart
             // 
@@ -163,7 +152,6 @@
             this.Controls.Add(this.labelSart);
             this.Controls.Add(this.checkBoxAllRev);
             this.Controls.Add(this.btnChart);
-            this.Controls.Add(this.btnReport);
             this.Controls.Add(this.dataGridViewRevenue);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSearRevenue);
@@ -184,7 +172,6 @@
         private System.Windows.Forms.Button btnSearRevenue;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewRevenue;
-        private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnChart;
         private System.Windows.Forms.CheckBox checkBoxAllRev;
         private System.Windows.Forms.Label labelSart;
