@@ -35,17 +35,17 @@ namespace SalesLeadsManagementSystem.General
            
             if(!(txtNew1.Text).Equals(txtNew2.Text))
             {
-                btnConfirmPW.Visible = false;
+                btnConfirmPW.Enabled = false;
                 lblNotify.Text = "Passwords does not match";
             }
             else if (txtNew1.Text.Length < 5)
             {
-                btnConfirmPW.Visible = false;
+                btnConfirmPW.Enabled = false;
                 lblNotify.Text = "Please enter a Password with atleast 5 characters";
             }
             else
             {
-                btnConfirmPW.Visible = true;
+                btnConfirmPW.Enabled = true;
                 lblNotify.Text = "Press Confirm to change your password";
 
             }
@@ -95,6 +95,32 @@ namespace SalesLeadsManagementSystem.General
         {
             this.Close();
             
+        }
+
+        private void frmSettings_Load(object sender, EventArgs e)
+        {
+            update();
+            SecQCheck();
+        }
+
+        private void txtSecurityQ_TextChanged(object sender, EventArgs e)
+        {
+            SecQCheck();
+        }
+
+        private void SecQCheck()
+        {
+            if (txtSecurityQ.Text.Trim().Equals("") || txtSecurityAns.Text.Trim().Equals(""))
+            {
+                btnConfirmSQ.Enabled = false;
+            }
+            else
+                btnConfirmSQ.Enabled = true;
+        }
+
+        private void txtSecurityAns_TextChanged(object sender, EventArgs e)
+        {
+            SecQCheck();
         }
 
         

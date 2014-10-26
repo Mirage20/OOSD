@@ -44,3 +44,4 @@ E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLea
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Properties.Resources.resources
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.Security.frmResetPassword.resources
 E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.csproj.GenerateResource.Cache
+E:\UoM\Sem 3\Object Oriented Software Development\Project\Code\git\OOSD\SalesLeadsManagementSystem\obj\Debug\SalesLeadsManagementSystem.General.frmSettings.resources
