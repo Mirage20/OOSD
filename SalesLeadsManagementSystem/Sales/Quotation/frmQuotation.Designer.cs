@@ -178,7 +178,7 @@
             this.Controls.Add(this.txtQuotationStatus);
             this.Controls.Add(this.dateTimePickerQuotationDate);
             this.Name = "frmQuotation";
-            this.Text = "frmQuotation";
+            this.Text = "Quotations";
             this.Load += new System.EventHandler(this.frmQuotation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuotations)).EndInit();
             this.ResumeLayout(false);

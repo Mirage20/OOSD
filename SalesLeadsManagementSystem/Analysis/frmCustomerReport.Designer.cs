@@ -110,7 +110,7 @@
             // labelSart
             // 
             this.labelSart.AutoSize = true;
-            this.labelSart.Location = new System.Drawing.Point(12, 72);
+            this.labelSart.Location = new System.Drawing.Point(9, 72);
             this.labelSart.Name = "labelSart";
             this.labelSart.Size = new System.Drawing.Size(55, 13);
             this.labelSart.TabIndex = 7;
@@ -119,7 +119,7 @@
             // labelEnd
             // 
             this.labelEnd.AutoSize = true;
-            this.labelEnd.Location = new System.Drawing.Point(165, 72);
+            this.labelEnd.Location = new System.Drawing.Point(162, 72);
             this.labelEnd.Name = "labelEnd";
             this.labelEnd.Size = new System.Drawing.Size(52, 13);
             this.labelEnd.TabIndex = 8;
@@ -128,7 +128,7 @@
             // dateTimePickerStart
             // 
             this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerStart.Location = new System.Drawing.Point(15, 88);
+            this.dateTimePickerStart.Location = new System.Drawing.Point(12, 88);
             this.dateTimePickerStart.Name = "dateTimePickerStart";
             this.dateTimePickerStart.Size = new System.Drawing.Size(147, 20);
             this.dateTimePickerStart.TabIndex = 9;
@@ -136,7 +136,7 @@
             // dateTimePickerEnd
             // 
             this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(168, 88);
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(165, 88);
             this.dateTimePickerEnd.Name = "dateTimePickerEnd";
             this.dateTimePickerEnd.Size = new System.Drawing.Size(147, 20);
             this.dateTimePickerEnd.TabIndex = 10;

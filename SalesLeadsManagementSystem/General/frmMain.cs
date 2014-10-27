@@ -134,6 +134,23 @@ namespace SalesLeadsManagementSystem.General
             aboutUs.ShowDialog();
         }
 
+        private void ViewHelptoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string helpFilePath="";
+            try
+            {
+                helpFilePath = System.Windows.Forms.Application.StartupPath + @"\SalesleadHelp.pdf";
+
+                System.Diagnostics.Process.Start(helpFilePath);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Could not find the help file.\r\n" + helpFilePath, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
        
     }
 }

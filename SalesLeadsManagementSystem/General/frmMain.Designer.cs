@@ -177,13 +177,14 @@
             // ViewHelptoolStripMenuItem
             // 
             this.ViewHelptoolStripMenuItem.Name = "ViewHelptoolStripMenuItem";
-            this.ViewHelptoolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.ViewHelptoolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ViewHelptoolStripMenuItem.Text = "&View Help";
+            this.ViewHelptoolStripMenuItem.Click += new System.EventHandler(this.ViewHelptoolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 

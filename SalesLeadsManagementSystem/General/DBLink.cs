@@ -32,7 +32,7 @@ namespace SalesLeadsManagementSystem.General
                
                //MessageBox.Show("Connecting to MySQL...");
                dbConnection.Open();
-               MessageBox.Show("Connected...");
+               //MessageBox.Show("Connected...");
                
             }
             catch 
