@@ -83,6 +83,33 @@ namespace SalesLeadsManagementSystem.Administration.User
             this.UpdateControls();
         }
 
+        private void validateData()
+        {
+            bool isValid = true;
+            if (txtUserName.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (txtName.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+            if (cmbPredecessor.Text.Trim().Equals("") && cmbUserPermissions.SelectedIndex != 5)
+            {
+                isValid = false;
+            }
+
+            if (cmbUserPermissions.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+          
+
+            btnAddUpdate.Enabled = isValid;
+
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -159,11 +186,35 @@ namespace SalesLeadsManagementSystem.Administration.User
             }
         }
 
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void cmbPredecessor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+        
         //chamil
         private void cmbUserPermissions_SelectedIndexChanged(object sender, EventArgs e)
         {           
             cmbPredecessor.DataSource = userHandler.getPredecessors();
+            validateData();
         }
+
+       
+
+       
+
+        
+
+        
 
         //chamil
 

@@ -1,4 +1,4 @@
-﻿#define Devoloper         //Set DevoloperMode to bypass login.
+﻿#define DevoloperMode         //Set DevoloperMode to bypass login.
 
 using System;
 using System.Collections.Generic;
@@ -45,9 +45,9 @@ namespace SalesLeadsManagementSystem.Security
             MessageBox.Show("Elaz..(y)");
             General.frmMain mainForm = new General.frmMain();
             Administration.User.User devUser= new Administration.User.User();
-            devUser.Permissions = 3;
+            devUser.Permissions = 5;
             devUser.Name = "Developer";
-            devUser.UserName = "120195T";
+            devUser.UserName = "120006T";
             
             General.frmMain.AppUser = devUser;
 

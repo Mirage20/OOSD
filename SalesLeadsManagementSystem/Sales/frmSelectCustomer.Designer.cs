@@ -132,7 +132,7 @@
             this.Controls.Add(this.dataGridViewselectcus);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSelectCustomer";
-            this.Text = "frmSelectCustomer";
+            this.Text = "Select Customer";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewselectcus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

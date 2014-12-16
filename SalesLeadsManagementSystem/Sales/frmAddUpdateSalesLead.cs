@@ -155,6 +155,7 @@ namespace SalesLeadsManagementSystem.Sales
 
         private void frmSalesLead_Load(object sender, EventArgs e)
         {
+            validateData();
             if(this.isAdd)
             {
                 this.Text = "Create New SalesLead";
@@ -233,6 +234,38 @@ namespace SalesLeadsManagementSystem.Sales
         private void updateControls()
         {
             addUpdateSalesleadsHandler.viewSalesleadData(this.selectedSalesLeadID);
+        }
+
+        private void validateData()
+        {
+            bool isValid = true;
+            if (txtCustomerID.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (txtProductID.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (cmbRevType.SelectedIndex == 0 && (txtMonthlyRev.Text.Trim().Equals("") || !General.Rules.isDecimalNumber(txtMonthlyRev.Text)))
+            {
+                isValid = false;
+            }
+
+            if (cmbRevType.SelectedIndex == 1 && ((txtProjectRev.Text.Trim().Equals("") || txtProjectPaid.Text.Trim().Equals("")) || (!General.Rules.isDecimalNumber(txtProjectRev.Text) || !General.Rules.isDecimalNumber(txtProjectPaid.Text))))
+            {
+                isValid = false;
+            }
+
+            if (!txtDiscount.Text.Trim().Equals("") && !General.Rules.isDecimalNumber(txtDiscount.Text))
+            {
+                isValid = false;
+            }
+
+            btnAddUpdate.Enabled = isValid;
+
         }
 
         private void btnAddUpdate_Click(object sender, EventArgs e)
@@ -423,6 +456,41 @@ namespace SalesLeadsManagementSystem.Sales
                 btnPurchaseFileAdd.BackColor = SystemColors.Control;
                 addUpdateSalesleadsHandler.PurchaseOrderFilePath = "";
             }
+        }
+
+        private void txtCustomerID_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtProductID_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtMonthlyRev_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void cmbHadTest_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtProjectRev_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtProjectPaid_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtDiscount_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
         }
 
         

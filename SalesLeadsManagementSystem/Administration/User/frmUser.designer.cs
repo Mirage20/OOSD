@@ -172,6 +172,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(226, 20);
             this.txtName.TabIndex = 17;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtUserName
             // 
@@ -179,6 +180,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(226, 20);
             this.txtUserName.TabIndex = 16;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // label1
             // 
@@ -221,6 +223,7 @@
             this.cmbPredecessor.Name = "cmbPredecessor";
             this.cmbPredecessor.Size = new System.Drawing.Size(226, 21);
             this.cmbPredecessor.TabIndex = 35;
+            this.cmbPredecessor.SelectedIndexChanged += new System.EventHandler(this.cmbPredecessor_SelectedIndexChanged);
             // 
             // frmUser
             // 

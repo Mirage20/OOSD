@@ -54,6 +54,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(226, 20);
             this.txtName.TabIndex = 0;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtShortName
             // 
@@ -61,6 +62,7 @@
             this.txtShortName.Name = "txtShortName";
             this.txtShortName.Size = new System.Drawing.Size(226, 20);
             this.txtShortName.TabIndex = 1;
+            this.txtShortName.TextChanged += new System.EventHandler(this.txtShortName_TextChanged);
             // 
             // txtAddress
             // 
@@ -68,6 +70,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(226, 20);
             this.txtAddress.TabIndex = 2;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // txtEmail
             // 
@@ -75,6 +78,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(226, 20);
             this.txtEmail.TabIndex = 3;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtPhone
             // 
@@ -82,13 +86,17 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(226, 20);
             this.txtPhone.TabIndex = 4;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // txtAccManager
             // 
+            this.txtAccManager.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtAccManager.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtAccManager.Location = new System.Drawing.Point(156, 160);
             this.txtAccManager.Name = "txtAccManager";
             this.txtAccManager.Size = new System.Drawing.Size(226, 20);
             this.txtAccManager.TabIndex = 5;
+            this.txtAccManager.TextChanged += new System.EventHandler(this.txtAccManager_TextChanged);
             // 
             // label1
             // 

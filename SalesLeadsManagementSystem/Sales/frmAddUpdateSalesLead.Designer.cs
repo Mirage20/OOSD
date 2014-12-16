@@ -105,6 +105,7 @@
             this.txtCustomerID.ReadOnly = true;
             this.txtCustomerID.Size = new System.Drawing.Size(72, 20);
             this.txtCustomerID.TabIndex = 0;
+            this.txtCustomerID.TextChanged += new System.EventHandler(this.txtCustomerID_TextChanged);
             // 
             // btnPickCustomer
             // 
@@ -142,6 +143,7 @@
             this.txtProductID.ReadOnly = true;
             this.txtProductID.Size = new System.Drawing.Size(72, 20);
             this.txtProductID.TabIndex = 1;
+            this.txtProductID.TextChanged += new System.EventHandler(this.txtProductID_TextChanged);
             // 
             // dateTimePickerIssueDate
             // 
@@ -444,6 +446,7 @@
             this.txtMonthlyRev.Name = "txtMonthlyRev";
             this.txtMonthlyRev.Size = new System.Drawing.Size(121, 20);
             this.txtMonthlyRev.TabIndex = 3;
+            this.txtMonthlyRev.TextChanged += new System.EventHandler(this.txtMonthlyRev_TextChanged);
             // 
             // cmbHadTest
             // 
@@ -456,6 +459,7 @@
             this.cmbHadTest.Name = "cmbHadTest";
             this.cmbHadTest.Size = new System.Drawing.Size(121, 21);
             this.cmbHadTest.TabIndex = 4;
+            this.cmbHadTest.SelectedIndexChanged += new System.EventHandler(this.cmbHadTest_SelectedIndexChanged);
             // 
             // txtProjectPaid
             // 
@@ -463,6 +467,7 @@
             this.txtProjectPaid.Name = "txtProjectPaid";
             this.txtProjectPaid.Size = new System.Drawing.Size(121, 20);
             this.txtProjectPaid.TabIndex = 6;
+            this.txtProjectPaid.TextChanged += new System.EventHandler(this.txtProjectPaid_TextChanged);
             // 
             // txtProjectRev
             // 
@@ -470,6 +475,7 @@
             this.txtProjectRev.Name = "txtProjectRev";
             this.txtProjectRev.Size = new System.Drawing.Size(121, 20);
             this.txtProjectRev.TabIndex = 5;
+            this.txtProjectRev.TextChanged += new System.EventHandler(this.txtProjectRev_TextChanged);
             // 
             // label10
             // 
@@ -565,6 +571,7 @@
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Size = new System.Drawing.Size(217, 20);
             this.txtDiscount.TabIndex = 17;
+            this.txtDiscount.TextChanged += new System.EventHandler(this.txtDiscount_TextChanged);
             // 
             // label17
             // 

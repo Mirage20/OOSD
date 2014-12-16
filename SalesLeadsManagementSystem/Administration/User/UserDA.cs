@@ -154,5 +154,23 @@ namespace SalesLeadsManagementSystem.Administration.User
             }
             return null;
         }
+
+
+        public string[] getAccmanagers()
+        {
+            string sqlUser1 = "SELECT `UserName` FROM `salesleads`.`user` WHERE `Permissions`='" + 2 + "';";
+            List<string> accManagerArray1 = new List<string>();
+            DBLink.openConnection();
+
+            MySqlDataReader userData1 = DBLink.executeReadQuarry(sqlUser1);
+
+            while (userData1.Read())
+            {
+                accManagerArray1.Add(userData1.GetString(0));
+
+            }
+            return accManagerArray1.ToArray();
+
+        }
     }
 }

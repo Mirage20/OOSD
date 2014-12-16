@@ -14,7 +14,7 @@ namespace SalesLeadsManagementSystem.Administration.Customer
     {
         private bool isAddMode = false;
         private int selectedCustomerID = 0;
-
+        private string[] accManagers;
 
         private CustomerHandler customerHandler;
 
@@ -66,6 +66,7 @@ namespace SalesLeadsManagementSystem.Administration.Customer
 
         private void btnAddUpdate_Click(object sender, EventArgs e)
         {
+                   
             if (this.isAddMode == true)
             {
                 customerHandler.newCustomer();
@@ -101,6 +102,15 @@ namespace SalesLeadsManagementSystem.Administration.Customer
             {
 
             }
+
+            txtAccManager.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            txtAccManager.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection autoCustomerList = new AutoCompleteStringCollection();
+            accManagers = User.UserDA.getInstance().getAccmanagers();
+            for (int i = 0; i < accManagers.Length; i++)
+                autoCustomerList.Add(accManagers[i]);
+
+            txtAccManager.AutoCompleteCustomSource = autoCustomerList;
         }
 
         private void dataGridViewCustomer_SelectionChanged(object sender, EventArgs e)
@@ -140,6 +150,87 @@ namespace SalesLeadsManagementSystem.Administration.Customer
             }
         }
 
+
+        private void validateData()
+        {
+            bool isValid = true;
+            if(txtName.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+            if (txtShortName.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (txtAddress.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (!General.Rules.isEmail(txtEmail.Text.Trim()))
+            {
+                isValid = false;
+            }
+
+            if(!General.Rules.isPhonenumber(txtPhone.Text.Trim()))
+            {
+                isValid = false;
+            }
+
+            if (txtAccManager.Text.Trim().Equals("") || !isValidAccManager(txtAccManager.Text.Trim()))
+            {
+                isValid = false;
+            }
+
+            btnAddUpdate.Enabled = isValid;
+
+        }
+
+        private bool isValidAccManager(string userName)
+        {
+            if (accManagers == null)
+                return false;
+
+            for (int i = 0; i < accManagers.Length; i++)
+            {
+                if (accManagers[i].Equals(userName))
+                    return true;
+            }
+
+            return false;
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtShortName_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtAddress_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtAccManager_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
         
     }
 }

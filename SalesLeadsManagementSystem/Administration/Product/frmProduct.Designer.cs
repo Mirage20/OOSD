@@ -70,6 +70,7 @@
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(271, 20);
             this.txtProductName.TabIndex = 2;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // txtInitialPrice
             // 
@@ -77,6 +78,7 @@
             this.txtInitialPrice.Name = "txtInitialPrice";
             this.txtInitialPrice.Size = new System.Drawing.Size(271, 20);
             this.txtInitialPrice.TabIndex = 4;
+            this.txtInitialPrice.TextChanged += new System.EventHandler(this.txtInitialPrice_TextChanged);
             // 
             // label1
             // 
@@ -121,6 +123,7 @@
             this.txtProductDetails.Name = "txtProductDetails";
             this.txtProductDetails.Size = new System.Drawing.Size(271, 95);
             this.txtProductDetails.TabIndex = 9;
+            this.txtProductDetails.TextChanged += new System.EventHandler(this.txtProductDetails_TextChanged);
             // 
             // cmbCategory
             // 
@@ -133,6 +136,7 @@
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(271, 21);
             this.cmbCategory.TabIndex = 10;
+            this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // dataGridViewProduct
             // 

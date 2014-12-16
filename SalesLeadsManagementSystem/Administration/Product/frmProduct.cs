@@ -61,6 +61,33 @@ namespace SalesLeadsManagementSystem.Administration.Product
             this.Close();
         }
 
+        private void validateData()
+        {
+            bool isValid = true;
+            if (txtProductName.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (cmbCategory.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            if (txtInitialPrice.Text.Trim().Equals("") || !General.Rules.isDecimalNumber(txtInitialPrice.Text))
+            {
+                isValid = false;
+            }
+
+            if (txtProductDetails.Text.Trim().Equals(""))
+            {
+                isValid = false;
+            }
+
+            btnAddUpdate.Enabled = isValid;
+
+        }
+
         private void btnAddUpdate_Click(object sender, EventArgs e)
         {
             if (this.isAddMode == true)
@@ -135,6 +162,26 @@ namespace SalesLeadsManagementSystem.Administration.Product
                 txtProductDetails.Clear();
                 
             }
+        }
+
+        private void txtProductName_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtInitialPrice_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
+        }
+
+        private void txtProductDetails_TextChanged(object sender, EventArgs e)
+        {
+            validateData();
         }
 
         
