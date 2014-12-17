@@ -25,7 +25,7 @@ namespace SalesLeadsManagementSystem.Administration.User
             modelUser.Name = viewUser.RealName.Text;
             modelUser.Permissions = viewUser.UserPermissions.SelectedIndex;
             modelUser.UserRating = viewUser.UserRating.Text;
-            modelUser.MonthlyRevnue = Convert.ToDecimal(viewUser.UserMonthlyRevenue.Text);
+            modelUser.MonthlyRevnue = Convert.ToDecimal(General.Rules.textToPrice(viewUser.UserMonthlyRevenue.Text));
             modelUser.Predecessor = viewUser.UserPredecessor.Text;
             modelUser.Notes = viewUser.UserNotes.Text;
             modelUser.create();
@@ -38,7 +38,7 @@ namespace SalesLeadsManagementSystem.Administration.User
             modelUser.Name = viewUser.RealName.Text;
             modelUser.Permissions = viewUser.UserPermissions.SelectedIndex;
             modelUser.UserRating = viewUser.UserRating.Text;
-            modelUser.MonthlyRevnue = Convert.ToDecimal(viewUser.UserMonthlyRevenue.Text);
+            modelUser.MonthlyRevnue = Convert.ToDecimal(General.Rules.textToPrice(viewUser.UserMonthlyRevenue.Text));
             modelUser.Predecessor = viewUser.UserPredecessor.Text;
             modelUser.Notes = viewUser.UserNotes.Text;
             modelUser.update();

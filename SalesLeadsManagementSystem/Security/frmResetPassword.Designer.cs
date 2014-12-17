@@ -86,7 +86,7 @@
             this.MinimizeBox = false;
             this.Name = "frmResetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRecovePassword";
+            this.Text = "Recover Password";
             this.ResumeLayout(false);
             this.PerformLayout();
 

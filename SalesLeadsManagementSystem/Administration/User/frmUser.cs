@@ -104,7 +104,11 @@ namespace SalesLeadsManagementSystem.Administration.User
             {
                 isValid = false;
             }
-          
+
+            if (!txtMonthlyRevenue.Text.Trim().Equals("") && !General.Rules.isDecimalNumber(txtMonthlyRevenue.Text))
+            {
+                isValid = false;
+            }
 
             btnAddUpdate.Enabled = isValid;
 
@@ -205,6 +209,11 @@ namespace SalesLeadsManagementSystem.Administration.User
         private void cmbUserPermissions_SelectedIndexChanged(object sender, EventArgs e)
         {           
             cmbPredecessor.DataSource = userHandler.getPredecessors();
+            validateData();
+        }
+
+        private void txtMonthlyRevenue_TextChanged(object sender, EventArgs e)
+        {
             validateData();
         }
 

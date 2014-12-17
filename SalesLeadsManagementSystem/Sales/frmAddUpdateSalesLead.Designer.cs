@@ -94,9 +94,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Customer ID";
+            this.label1.Text = "Customer ID *";
             // 
             // txtCustomerID
             // 
@@ -122,9 +122,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Product ID";
+            this.label2.Text = "Product ID *";
             // 
             // btnPickProduct
             // 
@@ -491,9 +491,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(6, 110);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 13);
+            this.label11.Size = new System.Drawing.Size(92, 13);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Monthly Revenue";
+            this.label11.Text = "MonthlyRevenue*";
             // 
             // label12
             // 
@@ -509,18 +509,18 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(6, 163);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(87, 13);
+            this.label13.Size = new System.Drawing.Size(91, 13);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Project Revenue";
+            this.label13.Text = "Project Revenue*";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(6, 189);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 13);
+            this.label14.Size = new System.Drawing.Size(68, 13);
             this.label14.TabIndex = 26;
-            this.label14.Text = "Project Paid";
+            this.label14.Text = "Project Paid*";
             // 
             // groupBoxDetails
             // 

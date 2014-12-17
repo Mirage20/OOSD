@@ -105,15 +105,20 @@ namespace SalesLeadsManagementSystem.Analysis
 
         private void btnChart_Click(object sender, EventArgs e)
         {
-            crHandler.newCustomerRevenue(Int32.Parse(dataGridViewRevenue.SelectedRows[0].Cells[1].Value.ToString()));
-            crHandler.ViewGraph = new frmGraph(StartDate.Value);
-            crHandler.ViewGraph.Data = crHandler.ModelCustomerRevenue.TotalRevenue;
-            crHandler.ViewGraph.Series = crHandler.ModelCustomerRevenue.CustomerName;
-            if(checkBoxAllRev.Checked)
-                crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, "All Sales Revenues");
+            if (dateTimePickerEnd.Value.CompareTo(dateTimePickerStart.Value) > 0)
+            {
+                crHandler.newCustomerRevenue(Int32.Parse(dataGridViewRevenue.SelectedRows[0].Cells[1].Value.ToString()));
+                crHandler.ViewGraph = new frmGraph(StartDate.Value);
+                crHandler.ViewGraph.Data = crHandler.ModelCustomerRevenue.TotalRevenue;
+                crHandler.ViewGraph.Series = crHandler.ModelCustomerRevenue.CustomerName;
+                if (checkBoxAllRev.Checked)
+                    crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, "All Sales Revenues");
+                else
+                    crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, crHandler.ViewGraph.Series);
+                crHandler.ViewGraph.Show();
+            }
             else
-                crHandler.ViewGraph.drawGraph(crHandler.ViewGraph.Data, crHandler.ViewGraph.Series);
-            crHandler.ViewGraph.Show();
+                MessageBox.Show(this,"Invalid date range","WARNING",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             
         }
 

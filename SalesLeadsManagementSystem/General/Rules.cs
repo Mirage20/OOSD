@@ -30,7 +30,7 @@ namespace SalesLeadsManagementSystem.General
         public static bool isDecimalNumber(string number)
         {
             decimal result;
-            return Decimal.TryParse(number, out result) && result>0;
+            return Decimal.TryParse(number, out result) && result>=0;
         }
 
         public static decimal textToPrice(string value)

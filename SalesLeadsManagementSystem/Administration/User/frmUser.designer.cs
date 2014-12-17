@@ -158,6 +158,7 @@
             this.txtMonthlyRevenue.Name = "txtMonthlyRevenue";
             this.txtMonthlyRevenue.Size = new System.Drawing.Size(226, 20);
             this.txtMonthlyRevenue.TabIndex = 20;
+            this.txtMonthlyRevenue.TextChanged += new System.EventHandler(this.txtMonthlyRevenue_TextChanged);
             // 
             // txtRating
             // 
